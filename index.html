@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJJO</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav__list list-1">
+                        <li><a href="#!">Контрагентам</a></li>
+                        <li><a href="#!">Дизайнерам</a></li>
+                        <li><a href="#!">Вакансии</a></li>
+                    </ul>
+                    <div class="header__logo">
+                        <img src="./img/header/header-logo.svg" alt="OJJO">
+                    </div>
+                    <ul class="nav__list list-2">
+                        <li>
+                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 19L15.846 13.846C16.7988 12.3979 17.1805 10.6477 16.917 8.93442C16.6536 7.22111 15.7638 5.66648 14.4199 4.57154C13.076 3.47659 11.3737 2.91923 9.64247 3.00735C7.91125 3.09547 6.27431 3.82281 5.04857 5.04855C3.82283 6.27429 3.09549 7.91123 3.00737 9.64245C2.91925 11.3737 3.47662 13.076 4.57156 14.4199C5.6665 15.7637 7.22113 16.6535 8.93445 16.917C10.6478 17.1804 12.3979 16.7988 13.846 15.846L19 21L21 19ZM5 9.99998C5 7.24298 7.243 4.99998 10 4.99998C12.757 4.99998 15 7.24298 15 9.99998C15 12.757 12.757 15 10 15C7.243 15 5 12.757 5 9.99998Z" fill="white"/>
+                            </svg>
+                            <input class="search-input" type="search" 
+                                autocomplete="off" placeholder="Поиск">
+                        </li>
+                        <li>
+                            <a href="#!">Вход/Регистрация</a>
+                        </li>
+                        <li class="list-2__icons">
+                            <a href="#!">
+                                <svg width="16" height="16" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 0C9.06087 0 10.0783 0.421427 10.8284 1.17157C11.5786 1.92172 12 2.93913 12 4C12 5.06087 11.5786 6.07828 10.8284 6.82843C10.0783 7.57857 9.06087 8 8 8C6.93913 8 5.92172 7.57857 5.17157 6.82843C4.42143 6.07828 4 5.06087 4 4C4 2.93913 4.42143 1.92172 5.17157 1.17157C5.92172 0.421427 6.93913 0 8 0ZM8 10C12.42 10 16 11.79 16 14V16H0V14C0 11.79 3.58 10 8 10Z" />
+                                </svg>
+                            </a>
+                            <a href="#!">
+                                <svg width="17" height="15" viewbox="0 0 17 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.97342 2.59641C6.21857 -1.65888 0.642853 0.659263 0.642853 5.29469C0.642853 8.77555 8.28685 14.2205 8.97342 14.9285C9.66471 14.2205 16.9286 8.77555 16.9286 5.29469C16.9286 0.694406 11.7334 -1.65888 8.97342 2.59641Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-mobile">
+                            <div class="social-icons">
+                                <a class="youtube-link" href="#!">
+                                    <svg width="26" height="26" viewbox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.8956 7.52385C23.7662 7.04288 23.5127 6.60435 23.1605 6.25215C22.8083 5.89995 22.3697 5.64643 21.8888 5.51697C20.1175 5.0376 13 5.0376 13 5.0376C13 5.0376 5.8825 5.0376 4.11125 5.51697C3.63029 5.64643 3.19176 5.89995 2.83956 6.25215C2.48736 6.60435 2.23384 7.04288 2.10438 7.52385C1.77365 9.33025 1.61315 11.1637 1.625 13.0001C1.61315 14.8365 1.77365 16.6699 2.10438 18.4763C2.23384 18.9573 2.48736 19.3958 2.83956 19.748C3.19176 20.1002 3.63029 20.3538 4.11125 20.4832C5.8825 20.9626 13 20.9626 13 20.9626C13 20.9626 20.1175 20.9626 21.8888 20.4832C22.3697 20.3538 22.8083 20.1002 23.1605 19.748C23.5127 19.3958 23.7662 18.9573 23.8956 18.4763C24.2264 16.6699 24.3869 14.8365 24.375 13.0001C24.3869 11.1637 24.2264 9.33025 23.8956 7.52385ZM10.725 16.4126V9.5876L16.6319 13.0001L10.725 16.4126Z" />
+                                    </svg>
+                                </a>
+                                <a class="vk-link" href="#!">
+                                    <svg width="26" height="26" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3624 14.7577C21.3624 14.7577 23.3028 16.6741 23.7828 17.5609C23.7922 17.5736 23.7994 17.5878 23.8044 17.6029C24 17.9305 24.048 18.1873 23.952 18.3769C23.79 18.6901 23.2416 18.8473 23.0556 18.8605H19.626C19.3872 18.8605 18.8904 18.7981 18.2856 18.3805C17.8236 18.0577 17.364 17.5261 16.9188 17.0065C16.254 16.2349 15.6792 15.5653 15.0972 15.5653C15.0237 15.5651 14.9507 15.5773 14.8812 15.6013C14.4408 15.7405 13.8816 16.3681 13.8816 18.0397C13.8816 18.5629 13.4688 18.8605 13.1796 18.8605H11.6088C11.0736 18.8605 8.28722 18.6733 5.81642 16.0681C2.78882 12.8785 0.0696241 6.48005 0.0432241 6.42365C-0.125976 6.00965 0.229224 5.78405 0.613224 5.78405H4.07642C4.54082 5.78405 4.69202 6.06485 4.79762 6.31685C4.92002 6.60605 5.37362 7.76285 6.11762 9.06245C7.32242 11.1768 8.06282 12.0373 8.65442 12.0373C8.76557 12.0376 8.87484 12.0086 8.97122 11.9533C9.74402 11.5285 9.60002 8.76845 9.56402 8.19965C9.56402 8.08925 9.56282 6.96725 9.16682 6.42485C8.88362 6.03605 8.40122 5.88485 8.10962 5.82965C8.18762 5.71685 8.35322 5.54405 8.56562 5.44205C9.09482 5.17805 10.0512 5.13965 11.0004 5.13965H11.5272C12.5568 5.15405 12.8232 5.22005 13.1976 5.31485C13.9512 5.49485 13.9656 5.98325 13.8996 7.64645C13.8804 8.12165 13.86 8.65685 13.86 9.28685C13.86 9.42125 13.854 9.57125 13.854 9.72365C13.8312 10.5768 13.8012 11.5381 14.4036 11.9329C14.4818 11.9815 14.572 12.0073 14.664 12.0072C14.8728 12.0072 15.498 12.0072 17.1936 9.09725C17.9376 7.81205 18.5136 6.29645 18.5532 6.18245C18.5868 6.11885 18.6876 5.94005 18.81 5.86805C18.8971 5.82172 18.9946 5.79858 19.0932 5.80085H23.1672C23.6112 5.80085 23.9124 5.86805 23.9712 6.03605C24.0696 6.30845 23.952 7.14005 22.092 9.65525C21.7788 10.074 21.504 10.4365 21.2628 10.7533C19.5768 12.9661 19.5768 13.0777 21.3624 14.7577Z" />
+                                    </svg>
+                                </a>
+                                <a class="facebook-link" href="#!">
+                                    <svg width="26" height="26" viewbox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.5134 22.7467V13.8677H17.5088L17.9541 10.3913H14.5134V8.17694C14.5134 7.17377 14.7929 6.48694 16.2327 6.48694H18.057V3.38752C17.1694 3.2924 16.2771 3.24646 15.3844 3.24994C12.7367 3.24994 10.9189 4.86627 10.9189 7.83352V10.3848H7.94299V13.8612H10.9254V22.7467H14.5134Z" />
+                                    </svg>
+                                </a>
+                                <a class="telegram-link" href="#!">
+                                    <svg width="26" height="26" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.665 3.71706L2.935 10.5541C1.725 11.0401 1.732 11.7151 2.713 12.0161L7.265 13.4361L17.797 6.79106C18.295 6.48806 18.75 6.65106 18.376 6.98306L9.843 14.6841H9.841L9.843 14.6851L9.529 19.3771C9.989 19.3771 10.192 19.1661 10.45 18.9171L12.661 16.7671L17.26 20.1641C18.108 20.6311 18.717 20.3911 18.928 19.3791L21.947 5.15106C22.256 3.91206 21.474 3.35106 20.665 3.71706Z" />
+                                    </svg>
+                                </a>
+                                <a class="etsy-link" href="#!">
+                                    <svg width="26" height="26" viewbox="-3 0 24 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.70932 1.63C5.70932 1.41333 5.73132 1.28333 6.10265 1.28333H11.0793C11.946 1.28333 12.426 2.02333 12.7727 3.412L13.0527 4.52267H13.8993C14.0527 1.37067 14.186 0 14.186 0C14.186 0 12.0553 0.24 10.7927 0.24H4.42665L1.01732 0.130667V1.044L2.16732 1.26133C2.97399 1.42133 3.16732 1.592 3.23399 2.332C3.23399 2.332 3.30732 4.512 3.30732 8.092C3.30732 11.682 3.24732 13.832 3.24732 13.832C3.24732 14.4807 2.98732 14.7207 2.18732 14.8807L1.03932 15.1007V16L4.45932 15.89H10.1593C11.4493 15.89 14.4193 16 14.4193 16C14.4893 15.22 14.9193 11.68 14.9893 11.2907H14.1893L13.3333 13.2307C12.6633 14.7507 11.6827 14.8607 10.5933 14.8607H7.32265C6.23599 14.8607 5.71265 14.434 5.71265 13.494V8.53333C5.71265 8.53333 8.12599 8.53333 8.90598 8.59733C9.51398 8.64 9.88132 8.814 10.0793 9.66267L10.3393 10.7927H11.2793L11.2193 7.94067L11.3473 5.07067H10.42L10.12 6.33067C9.93132 7.16 9.79998 7.31067 8.95065 7.39733C7.83998 7.51067 5.74065 7.49067 5.74065 7.49067V1.63333H5.70732L5.70932 1.63Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="nav__btn">
+                        <button class="nav-icon-btn" type="button">
+                            <div class="nav-icon"></div>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header__title">
+            <div class="container">
+                <h1 class="main-title">Долго, дорого, богато!</h1>
+                <button class="catalog-btn" type="button">Каталог изделий</button>
+            </div>
+        </div>
+        <div class="header__footer">
+            <div class="header__footer-border"></div>
+            <div class="container">
+                <div class="header__footer-brands">
+                    <img src="./img/header/header-brand.png" alt="brand"></img>
+                    <div class="brands-border"></div>
+                    <img src="./img/header/header-brand.png" alt="brand"></img>
+                    <div class="brands-border"></div>
+                    <img src="./img/header/header-brand.png" alt="brand"></img>
+                    <div class="brands-border"></div>
+                    <img src="./img/header/header-brand.png" alt="brand"></img>
+                    <div class="brands-border"></div>
+                    <img src="./img/header/header-brand.png" alt="brand"></img>
+                    <div class="brands-border"></div>
+                    <img src="./img/header/header-brand.png" alt="brand"></img>
+                </div>    
+            </div>
+        </div>
+    </header>
+    <main class="main none">
+        <section class="assortment">
+            <div class="container">
+                <div class="assortment__title">
+                    <h3 class="subtitle">К мероприятиям</h3>
+                    <h2 class="title-2">Настоящая красота здесь!</h2>
+                </div>
+                <div class="assortment__select">
+                    <div class="assortment__select-buttons">
+                       <button class="button_marriage select-button">Свадьба</button> 
+                       <button class="button_husband select-button">Мужу</button> 
+                       <button class="button_wife select-button">Жене</button> 
+                       <button class="button_partner select-button">Партнеру</button> 
+                       <button class="button_collections select-button">Коллекции</button> 
+                       <button class="button_rarity select-button">Редкость</button> 
+                    </div>
+                    <div class="assortment__select-cards">
+                        <a href="#!" class="assortment-card">
+                            <img class="assortment-card-img" src="./img/main/assortment/assortment-rings.jpg" alt="rings">
+                            <h3 class="assortment-card-title">Кольца</h3>
+                        </a>
+                        <a href="#!" class="assortment-card">
+                            <img class="assortment-card-img" src="./img/main/assortment/assortment-earrings.jpg" alt="earrings">
+                            <h3 class="assortment-card-title">Серьги</h3>
+                        </a>
+                        <a href="#!" class="assortment-card">
+                            <img class="assortment-card-img" src="./img/main/assortment/assortment-pendants.jpg" alt="pendants">
+                            <h3 class="assortment-card-title">Подвески</h3>
+                        </a>
+                        <a href="#!" class="assortment-card">
+                            <img class="assortment-card-img" src="./img/main/assortment/assortment-cufflinks.jpg" alt="cufflinks">
+                            <h3 class="assortment-card-title">Запонки</h3>
+                        </a>
+                        <a href="#!" class="assortment-card">
+                            <img class="assortment-card-img" src="./img/main/assortment/assortment-bracelets.jpg" alt="bracelets">
+                            <h3 class="assortment-card-title">Браслеты</h3>
+                        </a>
+                        <a href="#!" class="assortment-card">
+                            <img class="assortment-card-img" src="./img/main/assortment/assortment-watch.jpg" alt="watch">
+                            <h3 class="assortment-card-title">Часы</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="salons">
+            <div class="salons__container container">
+                <div class="salons__title">
+                    <h3 class="subtitle">Не знаете, что выбрать?</h3>
+                    <h2 class="title-2">Посетите наши салоны в Москве</h2>
+                </div>
+                <div class="salons__info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
+                        egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
+                        pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
+                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.</p>
+                </div>
+                <button class="salons__button" type="button">Наши салоны</button>
+            </div>
+        </section>
+        <section class="articles">
+            <div class="articles__container container">
+                <div class="articles__title">
+                    <h3 class="subtitle">Полезные статьи</h3>
+                    <h2 class="title-2">Лучшие советы по подбору дорогих подарков</h2>
+                </div>
+                <div class="articles__cards">
+                    <a class="articles-card" href="#!">
+                        <img class="articles-card-img" src="./../img/main/articles/watch-for-wife.jpg" alt="watch">
+                        <h3 class="articles-card-title">Как выбрать<br>часы для своей<br>будущей жены</h3>
+                    </a>
+                    <a class="articles-card" href="#!">
+                        <img class="articles-card-img" src="./../img/main/articles/cufflinks-for-husband.jpg" alt="cufflinks">
+                        <h3 class="articles-card-title">Запонки для мужа:<br>7 ключевых правил<br>покупки аксессуара</h3>
+                    </a>
+                    <a class="articles-card" href="#!">
+                        <img class="articles-card-img" src="./../img/main/articles/rings-for-newlyweds.jpg" alt="rings">
+                        <h3 class="articles-card-title">Как выбрать<br>обручальные кольца<br>молодоженам</h3>
+                    </a>
+                </div>
+                <button class="articles-button">Читать наш блог</button>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__title">
+                    <h3 class="subtitle">#ojjo_jewerly</h3>
+                    <h2 class="title-2">Мы в социальных сетях</h2>
+                </div>
+                <div class="info__img-vid">
+                    <div class="content-video-1">
+                        <a class="link-video" href="#!">
+                            <img src="./img/main/info/video-link-1.jpg" alt="link-video">
+                            <svg width="70" height="70" viewbox="0 0 70 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35 0C15.6719 0 0 15.6719 0 35C0 54.3281 15.6719 70 35 70C54.3281 70 70 54.3281 70 35C70 15.6719 54.3281 0 35 0ZM46.2578 35.5391L29.1953 47.9531C29.1018 48.0203 28.9915 48.0605 28.8766 48.0691C28.7618 48.0777 28.6468 48.0545 28.5442 48.0021C28.4417 47.9496 28.3556 47.8699 28.2954 47.7716C28.2352 47.6734 28.2033 47.5605 28.2031 47.4453V22.6328C28.2027 22.5174 28.2343 22.4041 28.2944 22.3056C28.3544 22.207 28.4406 22.127 28.5434 22.0744C28.6461 22.0218 28.7614 21.9987 28.8765 22.0076C28.9916 22.0166 29.1019 22.0572 29.1953 22.125L46.2578 34.5312C46.3384 34.5883 46.4042 34.6638 46.4496 34.7515C46.4949 34.8391 46.5186 34.9364 46.5186 35.0352C46.5186 35.1339 46.4949 35.2312 46.4496 35.3189C46.4042 35.4065 46.3384 35.4821 46.2578 35.5391Z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-img">
+                        <img src="./img/main/info/content-1.jpg" alt="rings">
+                    </div>
+                    <div class="content-img">
+                        <img src="./img/main/info/content-2.jpg" alt="stone">
+                    </div>
+                    <div class="content-img">
+                        <img src="./img/main/info/content-3.jpg" alt="ring">
+                    </div>
+                    <div class="content-img">
+                        <img src="./img/main/info/content-4.jpg" alt="watch">
+                    </div>
+                    <div class="content-video-2">
+                        <a class="link-video" href="#!">
+                            <img src="./img/main/info/video-link-2.jpg" alt="link-video">
+                            <svg width="70" height="70" viewbox="0 0 70 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35 0C15.6719 0 0 15.6719 0 35C0 54.3281 15.6719 70 35 70C54.3281 70 70 54.3281 70 35C70 15.6719 54.3281 0 35 0ZM46.2578 35.5391L29.1953 47.9531C29.1018 48.0203 28.9915 48.0605 28.8766 48.0691C28.7618 48.0777 28.6468 48.0545 28.5442 48.0021C28.4417 47.9496 28.3556 47.8699 28.2954 47.7716C28.2352 47.6734 28.2033 47.5605 28.2031 47.4453V22.6328C28.2027 22.5174 28.2343 22.4041 28.2944 22.3056C28.3544 22.207 28.4406 22.127 28.5434 22.0744C28.6461 22.0218 28.7614 21.9987 28.8765 22.0076C28.9916 22.0166 29.1019 22.0572 29.1953 22.125L46.2578 34.5312C46.3384 34.5883 46.4042 34.6638 46.4496 34.7515C46.4949 34.8391 46.5186 34.9364 46.5186 35.0352C46.5186 35.1339 46.4949 35.2312 46.4496 35.3189C46.4042 35.4065 46.3384 35.4821 46.2578 35.5391Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="cta__container container">
+                <div class="cta__title">
+                    <h3 class="subtitle">Полезные советы и персональный предложения</h3>
+                    <h2 class="title-2">Эксклюзивная рассылка</h2>
+                </div>
+                <div class="cta__wrapper">
+                    <div class="cta__offers">
+                        <ul class="offers-list">
+                            <li>
+                                <a href="#!">
+                                    <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 8.5L7.25 10.6651L7.25 6.33494L11 8.5Z" fill="currentColor"/>
+                                    <path d="M4.75 2.00481L16 8.5L4.75 14.9952L4.75 2.00481Z" stroke="currentColor"/>
+                                    </svg>
+                                    <span>Личный менеджер</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 8.5L7.25 10.6651L7.25 6.33494L11 8.5Z" fill="currentColor"/>
+                                    <path d="M4.75 2.00481L16 8.5L4.75 14.9952L4.75 2.00481Z" stroke="currentColor"/>
+                                    </svg>
+                                    <span>Доставка и оформление</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 8.5L7.25 10.6651L7.25 6.33494L11 8.5Z" fill="currentColor"/>
+                                    <path d="M4.75 2.00481L16 8.5L4.75 14.9952L4.75 2.00481Z" stroke="currentColor"/>
+                                    </svg>
+                                    <span>Индивидуальный дизайн</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cta__form">
+                        <form action="" class="form">
+                            <input class="form__input" type="email" placeholder="ваш e-mail">
+                            <button class="form__btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            <div>
+        </section>
+    </main>
+    <footer class="footer none">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="links">
+                    <h3 class="links-title footer_title-3">Полезные ссылки</h3>
+                    <div class="links-content footer_content">
+                        <a href="#!">Доставка</a>
+                        <a href="#!">Оплата</a>
+                        <a href="#!">Акции</a>
+                        <a href="#!">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="payment">
+                    <h3 class="payment-title footer_title-3">Оплата</h3>
+                    <div class="payment-content footer_content">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Ullamcorper
+                            justo, nec, pellentesque.</p>
+                        <div class="payment-icons">
+                            <img src="./img/footer/visa-icon.svg" alt="visa">
+                            <img src="./img/footer/mastercard-icon.svg" alt="mastercard">
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h3 class="contacts-title footer_title-3">Контакты</h3>
+                    <div class="contacts-content footer_content">
+                        <a href="#!">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.256 12.253C17.16 11.586 16.645 11.066 15.982 10.911C13.405 10.307 12.759 8.823 12.65 7.177C12.193 7.092 11.38 7 10 7C8.62 7 7.807 7.092 7.35 7.177C7.241 8.823 6.595 10.307 4.018 10.911C3.355 11.067 2.84 11.586 2.744 12.253L2.247 15.695C2.072 16.907 2.962 18 4.2 18H15.8C17.037 18 17.928 16.907 17.753 15.695L17.256 12.253ZM10 15.492C8.605 15.492 7.474 14.372 7.474 12.992C7.474 11.612 8.605 10.492 10 10.492C11.395 10.492 12.526 11.612 12.526 12.992C12.526 14.372 11.394 15.492 10 15.492ZM19.95 6C19.926 4.5 16.108 2.001 10 2C3.891 2.001 0.0729981 4.5 0.0499981 6C0.0269981 7.5 0.0709982 9.452 2.585 9.127C5.526 8.746 5.345 7.719 5.345 6.251C5.345 5.227 7.737 4.98 10 4.98C12.263 4.98 14.654 5.227 14.655 6.251C14.655 7.719 14.474 8.746 17.415 9.127C19.928 9.452 19.973 7.5 19.95 6Z" />
+                            </svg>
+                            <span>8 (812) 234-56-55</span>
+                        </a>
+                        <a href="#!">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.256 12.253C17.16 11.586 16.645 11.066 15.982 10.911C13.405 10.307 12.759 8.823 12.65 7.177C12.193 7.092 11.38 7 10 7C8.62 7 7.807 7.092 7.35 7.177C7.241 8.823 6.595 10.307 4.018 10.911C3.355 11.067 2.84 11.586 2.744 12.253L2.247 15.695C2.072 16.907 2.962 18 4.2 18H15.8C17.037 18 17.928 16.907 17.753 15.695L17.256 12.253ZM10 15.492C8.605 15.492 7.474 14.372 7.474 12.992C7.474 11.612 8.605 10.492 10 10.492C11.395 10.492 12.526 11.612 12.526 12.992C12.526 14.372 11.394 15.492 10 15.492ZM19.95 6C19.926 4.5 16.108 2.001 10 2C3.891 2.001 0.0729981 4.5 0.0499981 6C0.0269981 7.5 0.0709982 9.452 2.585 9.127C5.526 8.746 5.345 7.719 5.345 6.251C5.345 5.227 7.737 4.98 10 4.98C12.263 4.98 14.654 5.227 14.655 6.251C14.655 7.719 14.474 8.746 17.415 9.127C19.928 9.452 19.973 7.5 19.95 6Z" />
+                            </svg>
+                            <span>8 (812) 234-56-55</span>
+                        </a>
+                        <a href="#!">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.574 5.286L9.074 9.315C9.326 9.45 9.652 9.514 9.98 9.514C10.308 9.514 10.634 9.45 10.886 9.315L18.386 5.286C18.875 5.023 19.337 4 18.44 4H1.521C0.624002 4 1.086 5.023 1.574 5.286ZM18.613 7.489L10.886 11.516C10.546 11.694 10.308 11.715 9.98 11.715C9.652 11.715 9.414 11.694 9.074 11.516C8.734 11.338 1.941 7.777 1.386 7.488C0.996002 7.284 1 7.523 1 7.707V15C1 15.42 1.566 16 2 16H18C18.434 16 19 15.42 19 15V7.708C19 7.524 19.004 7.285 18.613 7.489Z" />
+                            </svg>
+                            <span>ojjo@ojjo.ru</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="social">
+                    <h3 class="social-title footer_title-3">Социальные сети</h3>
+                    <div class="social-content footer_content">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Ullamcorper
+                            justo, nec, pellentesque.</p>
+                        <div class="social-icons">
+                            <a class="youtube-link" href="#!">
+                                <svg width="26" height="26" viewbox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.8956 7.52385C23.7662 7.04288 23.5127 6.60435 23.1605 6.25215C22.8083 5.89995 22.3697 5.64643 21.8888 5.51697C20.1175 5.0376 13 5.0376 13 5.0376C13 5.0376 5.8825 5.0376 4.11125 5.51697C3.63029 5.64643 3.19176 5.89995 2.83956 6.25215C2.48736 6.60435 2.23384 7.04288 2.10438 7.52385C1.77365 9.33025 1.61315 11.1637 1.625 13.0001C1.61315 14.8365 1.77365 16.6699 2.10438 18.4763C2.23384 18.9573 2.48736 19.3958 2.83956 19.748C3.19176 20.1002 3.63029 20.3538 4.11125 20.4832C5.8825 20.9626 13 20.9626 13 20.9626C13 20.9626 20.1175 20.9626 21.8888 20.4832C22.3697 20.3538 22.8083 20.1002 23.1605 19.748C23.5127 19.3958 23.7662 18.9573 23.8956 18.4763C24.2264 16.6699 24.3869 14.8365 24.375 13.0001C24.3869 11.1637 24.2264 9.33025 23.8956 7.52385ZM10.725 16.4126V9.5876L16.6319 13.0001L10.725 16.4126Z" />
+                                </svg>
+                            </a>
+                            <a class="vk-link" href="#!">
+                                <svg width="26" height="26" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3624 14.7577C21.3624 14.7577 23.3028 16.6741 23.7828 17.5609C23.7922 17.5736 23.7994 17.5878 23.8044 17.6029C24 17.9305 24.048 18.1873 23.952 18.3769C23.79 18.6901 23.2416 18.8473 23.0556 18.8605H19.626C19.3872 18.8605 18.8904 18.7981 18.2856 18.3805C17.8236 18.0577 17.364 17.5261 16.9188 17.0065C16.254 16.2349 15.6792 15.5653 15.0972 15.5653C15.0237 15.5651 14.9507 15.5773 14.8812 15.6013C14.4408 15.7405 13.8816 16.3681 13.8816 18.0397C13.8816 18.5629 13.4688 18.8605 13.1796 18.8605H11.6088C11.0736 18.8605 8.28722 18.6733 5.81642 16.0681C2.78882 12.8785 0.0696241 6.48005 0.0432241 6.42365C-0.125976 6.00965 0.229224 5.78405 0.613224 5.78405H4.07642C4.54082 5.78405 4.69202 6.06485 4.79762 6.31685C4.92002 6.60605 5.37362 7.76285 6.11762 9.06245C7.32242 11.1768 8.06282 12.0373 8.65442 12.0373C8.76557 12.0376 8.87484 12.0086 8.97122 11.9533C9.74402 11.5285 9.60002 8.76845 9.56402 8.19965C9.56402 8.08925 9.56282 6.96725 9.16682 6.42485C8.88362 6.03605 8.40122 5.88485 8.10962 5.82965C8.18762 5.71685 8.35322 5.54405 8.56562 5.44205C9.09482 5.17805 10.0512 5.13965 11.0004 5.13965H11.5272C12.5568 5.15405 12.8232 5.22005 13.1976 5.31485C13.9512 5.49485 13.9656 5.98325 13.8996 7.64645C13.8804 8.12165 13.86 8.65685 13.86 9.28685C13.86 9.42125 13.854 9.57125 13.854 9.72365C13.8312 10.5768 13.8012 11.5381 14.4036 11.9329C14.4818 11.9815 14.572 12.0073 14.664 12.0072C14.8728 12.0072 15.498 12.0072 17.1936 9.09725C17.9376 7.81205 18.5136 6.29645 18.5532 6.18245C18.5868 6.11885 18.6876 5.94005 18.81 5.86805C18.8971 5.82172 18.9946 5.79858 19.0932 5.80085H23.1672C23.6112 5.80085 23.9124 5.86805 23.9712 6.03605C24.0696 6.30845 23.952 7.14005 22.092 9.65525C21.7788 10.074 21.504 10.4365 21.2628 10.7533C19.5768 12.9661 19.5768 13.0777 21.3624 14.7577Z" />
+                                </svg>
+                            </a>
+                            <a class="facebook-link" href="#!">
+                                <svg width="26" height="26" viewbox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.5134 22.7467V13.8677H17.5088L17.9541 10.3913H14.5134V8.17694C14.5134 7.17377 14.7929 6.48694 16.2327 6.48694H18.057V3.38752C17.1694 3.2924 16.2771 3.24646 15.3844 3.24994C12.7367 3.24994 10.9189 4.86627 10.9189 7.83352V10.3848H7.94299V13.8612H10.9254V22.7467H14.5134Z" />
+                                </svg>
+                            </a>
+                            <a class="telegram-link" href="#!">
+                                <svg width="26" height="26" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.665 3.71706L2.935 10.5541C1.725 11.0401 1.732 11.7151 2.713 12.0161L7.265 13.4361L17.797 6.79106C18.295 6.48806 18.75 6.65106 18.376 6.98306L9.843 14.6841H9.841L9.843 14.6851L9.529 19.3771C9.989 19.3771 10.192 19.1661 10.45 18.9171L12.661 16.7671L17.26 20.1641C18.108 20.6311 18.717 20.3911 18.928 19.3791L21.947 5.15106C22.256 3.91206 21.474 3.35106 20.665 3.71706Z" />
+                                </svg>
+                            </a>
+                            <a class="etsy-link" href="#!">
+                                <svg width="26" height="26" viewbox="-3 0 24 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.70932 1.63C5.70932 1.41333 5.73132 1.28333 6.10265 1.28333H11.0793C11.946 1.28333 12.426 2.02333 12.7727 3.412L13.0527 4.52267H13.8993C14.0527 1.37067 14.186 0 14.186 0C14.186 0 12.0553 0.24 10.7927 0.24H4.42665L1.01732 0.130667V1.044L2.16732 1.26133C2.97399 1.42133 3.16732 1.592 3.23399 2.332C3.23399 2.332 3.30732 4.512 3.30732 8.092C3.30732 11.682 3.24732 13.832 3.24732 13.832C3.24732 14.4807 2.98732 14.7207 2.18732 14.8807L1.03932 15.1007V16L4.45932 15.89H10.1593C11.4493 15.89 14.4193 16 14.4193 16C14.4893 15.22 14.9193 11.68 14.9893 11.2907H14.1893L13.3333 13.2307C12.6633 14.7507 11.6827 14.8607 10.5933 14.8607H7.32265C6.23599 14.8607 5.71265 14.434 5.71265 13.494V8.53333C5.71265 8.53333 8.12599 8.53333 8.90598 8.59733C9.51398 8.64 9.88132 8.814 10.0793 9.66267L10.3393 10.7927H11.2793L11.2193 7.94067L11.3473 5.07067H10.42L10.12 6.33067C9.93132 7.16 9.79998 7.31067 8.95065 7.39733C7.83998 7.51067 5.74065 7.49067 5.74065 7.49067V1.63333H5.70732L5.70932 1.63Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#!">(c) 2020 OJJO jewelry</a>
+                <a href="#!">Договор публичной офферты</a>
+                <a href="#!">Контрагентам</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+.articles {
+    padding: 120px 0;
+    color: $mainBlack;
+
+    &__container {
+        text-align: center;
+    }
+
+    .articles__title {
+        text-align: center;
+        margin-bottom: 60px;
+
+        & *:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .articles__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+
+        .articles-card {
+            position: relative;
+            display: block;
+            overflow: hidden;
+
+            .articles-card-img{
+                position: relative;
+                z-index: 5;
+                width: 350px;
+                height: 370px;
+                transition: all 0.3s ease-in;
+            }
+
+            .articles-card-title {
+                position: absolute;
+                z-index: 7;
+                bottom: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                color: $mainWhite;
+                font-size: 21px;
+                font-weight: normal;
+                line-height: 123%;
+                text-align: center;
+                width: 206px;
+                transition: text-shadow 0.3s ease-in;
+            }
+
+            &::before {
+                opacity: 1;
+                content: "";
+                position: absolute;
+                z-index: 6;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                    180deg,
+                    rgba(180, 180, 180, 0) 0%,
+                    $mainBlack 100%
+                );
+                transition: opacity 0.3s ease-in;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                .articles-card-title {
+                    text-shadow: 2px 2px 2px black;
+                    cursor: pointer;
+                }
+            }
+
+            &:hover .articles-card-img {
+                transform: scale(1.1);
+                filter: contrast(110%) saturate(1.2);
+            }
+        } 
+    }
+
+    .articles-button {
+        height: 51px;
+        width: 224px;
+        background-color: $mainBlack;
+        border: 1px solid $mainBlack;
+        color: $mainWhite;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 116%;
+        letter-spacing: 2px;
+        transition: background 0.2s ease-in, color 0.2s ease-in;
+
+
+
+        &:hover {
+            color: $mainBlack;
+            background-color: $mainWhite;
+        }
+    }
+}

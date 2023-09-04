@@ -1,0 +1,48 @@
+.cta {
+    background: url('./../img/main/cta/cta-bg.jpg');
+    color: $mainWhite;
+    padding: 100px 0 120px 0;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+
+        & *:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        height: 113px;
+    }
+
+    &__offers {
+        margin-right: 80px;
+
+        .offers-list{
+            display: flex;
+            height: 113px;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & a {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                & > svg {
+                    margin-right: 20px;
+                }
+            }
+            
+        }
+    }
+}

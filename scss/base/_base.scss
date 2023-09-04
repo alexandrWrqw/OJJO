@@ -1,0 +1,78 @@
+// Noto font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+// Gilroy font
+@font-face {
+    font-family: 'Gilroy';
+    src: url("./../../fonts/Gilroy__Font/Gilroy-Regular.woff2")
+        format("woff2"),
+        url("./../../fonts/Gilroy__Font/Gilroy-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("./../../fonts/Gilroy__Font/Gilroy-Medium.woff2")
+        format("woff2"),
+        url("./../../fonts/Gilroy__Font/Gilroy-Medium.woff")
+        format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("./../../fonts/Gilroy__Font/Gilroy-Semibold.woff2")
+        format("woff2"),
+        url("./../../fonts/Gilroy__Font/Gilroy-Semibold.woff")
+        format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $bg;
+    font-size: 18px;
+}
+
+a {
+    color: inherit;
+    transition: color 0.2s ease-in;
+    &:hover {
+        color: $accent;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+}
+
+.none {
+    display: none !important;
+}
+
+.title-2 {
+    font-family: $font-accent;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 133%;
+    color: inherit;
+}
+
+.subtitle {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 138%;
+    color: inherit;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}

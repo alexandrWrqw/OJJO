@@ -1,0 +1,47 @@
+.salons {
+    background: url("./../img/main/salons/salons-bg.jpg");
+    min-height: 541px;
+    color: $mainWhite;
+    padding: 100px 0;
+    text-align: center;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 45px;
+
+        & *:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__info{
+        max-width: 730px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__button{
+        height: 51px;
+        width: 224px;
+        background-color: $mainWhite;
+        border: 1px solid $mainBlack;
+        color: $mainBlack;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 116%;
+        letter-spacing: 2px;
+        transition: background 0.2s ease-in, color 0.2s ease-in;
+
+
+
+        &:hover {
+            color: $mainWhite;
+            background-color: $mainBlack;
+        }
+    }
+}
