@@ -35,17 +35,25 @@
 }
 // Main
 body {
-    font-family: $font-main;
     background-color: $bg;
     font-size: 18px;
 }
 
 a {
+    font-family: $font-main;
     color: inherit;
     transition: color 0.2s ease-in;
     &:hover {
         color: $accent;
     }
+}
+
+button {
+    font-family: $font-main;
+}
+
+p {
+    font-family: $font-main;  
 }
 
 .container {
