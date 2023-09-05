@@ -1,0 +1,116 @@
+.footer {
+    padding: 80px 0 20px 0;
+    color: $mainBlack;
+
+    @include mediaMobile {
+        padding: 40px 0 20px 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer__top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @media screen and (max-width: 940px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 450px) {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    & .payment {
+        &-icons *:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+
+    & .contacts {
+        &-content a {
+            display: flex;
+
+            & *:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    & .social {
+        &-icons {
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+
+            & a {
+                height: 26px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.footer_title-3 {
+    font-weight: 500;
+    line-height: 138%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @include mediaMobile {
+        font-size: 16px;
+    }
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $mainBlack;
+    padding: 30px 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 150%;
+
+    @include mediaSMobile {
+        padding: 15px 0;
+        font-size: 12px;
+    }
+
+    & *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.footer__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid $mainBlack;
+    padding-top: 20px;
+    text-align: center;
+
+    @include mediaSMobile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    & a {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 150%;
+
+        @include mediaSMobile {
+            font-size: 12px;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.cta__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $mainWhite;
+    padding: 15px;
+
+    @include mediaMobile {
+        padding: 10px;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $mainWhite;
+        padding: 21px;
+
+        @include mediaMobile {
+            padding: 12px;
+        }
+
+        @include mediaSMobile {
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+
+    .form__input {
+        height: 45px;
+        width: 200px;
+        background-color: $mainWhite;
+        padding: 15px;
+        margin-right: 15px;
+        border: 1px solid $greyBorder;
+        font-family: $font-main;
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 114%;
+        color: $mainBlack;
+
+        @include mediaMobile {
+            width: 160px;
+            height: 35px;
+            font-size: 12px;
+        }
+
+        @include mediaSMobile {
+            margin: 0 0 10px 0;
+        }
+
+        &::placeholder {
+            color: $mainBlack;
+            text-transform: uppercase;
+        }
+    }
+
+    .form__btn {
+        width: 159px;
+        height: 45px;
+        background-color: $mainBlack;
+        border: 1px solid $mainBlack;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 114%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.2s ease-in, background-color 0.2s ease-in;
+
+        @include mediaMobile {
+            width: 125px;
+            height: 35px;
+            font-size: 12px;
+        }
+
+        &:hover {
+            background-color: $greyBorder;
+            color: $mainBlack;
+        }
+    }
+}

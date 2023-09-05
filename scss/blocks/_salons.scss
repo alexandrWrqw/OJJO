@@ -1,0 +1,73 @@
+.salons {
+    background: url("./../img/main/salons/salons-bg.jpg");
+    min-height: 541px;
+    color: $mainWhite;
+    padding: 100px 0;
+    text-align: center;
+
+    @include mediaMobile {
+        min-height: 441px;
+        padding: 60px 0;
+    }
+
+    @include mediaSMobile {
+        padding: 40px 0;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 45px;
+
+        & *:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__info{
+        max-width: 730px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        @include mediaTablet {
+            font-size: 16px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+            line-height: 150%;
+        }
+    }
+
+    &__button{
+        height: 51px;
+        width: 224px;
+        background-color: $mainWhite;
+        border: 1px solid $mainBlack;
+        color: $mainBlack;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 116%;
+        letter-spacing: 2px;
+        transition: background 0.2s ease-in, color 0.2s ease-in;
+
+        @include mediaMobile {
+            font-size: 16px;
+            width: 200px;
+        }
+
+        @include mediaSMobile {
+            font-size: 14px;
+            height: 40px;
+            width: 155px;
+        }
+
+        &:hover {
+            color: $mainWhite;
+            background-color: $mainBlack;
+        }
+    }
+}
