@@ -1,0 +1,110 @@
+// Noto font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+// Gilroy font
+@font-face {
+    font-family: 'Gilroy';
+    src: url("./../../fonts/Gilroy__Font/Gilroy-Regular.woff2")
+        format("woff2"),
+        url("./../../fonts/Gilroy__Font/Gilroy-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("./../../fonts/Gilroy__Font/Gilroy-Medium.woff2")
+        format("woff2"),
+        url("./../../fonts/Gilroy__Font/Gilroy-Medium.woff")
+        format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("./../../fonts/Gilroy__Font/Gilroy-Semibold.woff2")
+        format("woff2"),
+        url("./../../fonts/Gilroy__Font/Gilroy-Semibold.woff")
+        format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+// Main
+body {
+    background-color: $bg;
+    font-size: 18px;
+}
+
+a {
+    font-family: $font-main;
+    color: inherit;
+    transition: color 0.2s ease-in;
+    &:hover {
+        color: $accent;
+    }
+}
+
+button {
+    font-family: $font-main;
+}
+
+p {
+    font-family: $font-main;  
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+}
+
+.none {
+    display: none !important;
+}
+
+.title-2 {
+    font-family: $font-accent;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 133%;
+    color: inherit;
+
+    @include mediaTablet {
+        font-size: 26px;
+    }
+
+    @include mediaMobile {
+        font-size: 24px;
+    }
+
+    @include mediaSMobile {
+        font-size: 22px;
+    }
+}
+
+.subtitle {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 138%;
+    color: inherit;
+
+    @include mediaTablet {
+        font-size: 18px;
+    }
+
+    @include mediaMobile {
+        font-size: 16px;
+    }
+
+    @include mediaSMobile {
+        font-size: 14px;
+    }
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
