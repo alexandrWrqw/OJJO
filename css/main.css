@@ -95,24 +95,24 @@ legend {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("./../fonts/Gilroy-font/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-font/Gilroy-Regular.woff") format("woff");
+  src: url("./../fonts/Gilroy-font/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("./../fonts/Gilroy-font/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("./../fonts/Gilroy-font/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-font/Gilroy-Regular.woff") format("woff"), url("./../fonts/Gilroy-font/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("./../fonts/Gilroy-font/Gilroy-Medium.woff2") format("woff2"), url("./../fonts/Gilroy-font/Gilroy-Medium.woff") format("woff");
+  src: url("./../fonts/Gilroy-font/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("./../fonts/Gilroy-font/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("./../fonts/Gilroy-font/Gilroy-Medium.woff2") format("woff2"), url("./../fonts/Gilroy-font/Gilroy-Medium.woff") format("woff"), url("./../fonts/Gilroy-font/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("./../fonts/Gilroy-font/Gilroy-Semibold.woff2") format("woff2"), url("./../fonts/Gilroy-font/Gilroy-Semibold.woff") format("woff");
+  src: url("./../fonts/Gilroy-font/Gilroy-Semibold.eot");
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("./../fonts/Gilroy-font/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("./../fonts/Gilroy-font/Gilroy-Semibold.woff2") format("woff2"), url("./../fonts/Gilroy-font/Gilroy-Semibold.woff") format("woff"), url("./../fonts/Gilroy-font/Gilroy-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
 }
 body {
   background-color: #F9F9F9;
