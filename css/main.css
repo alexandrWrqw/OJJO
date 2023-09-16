@@ -128,10 +128,7 @@ body {
   color: hsl(0, 0%, 50%);
 }
 
-* button {
-  font-family: "Gilroy", serif;
-}
-
+* button,
 * p {
   font-family: "Gilroy", serif;
 }
@@ -327,9 +324,11 @@ body {
 }
 .search-input::-moz-placeholder {
   color: #fff;
+  font-family: "Gilroy", serif;
 }
 .search-input::placeholder {
   color: #fff;
+  font-family: "Gilroy", serif;
 }
 
 .list-2 {
