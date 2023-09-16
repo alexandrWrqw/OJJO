@@ -119,20 +119,20 @@ body {
   font-size: 18px;
 }
 
-a {
+* a {
   font-family: "Gilroy", serif;
   color: inherit;
   transition: color 0.2s ease-in;
 }
-a:hover {
+* a:hover {
   color: hsl(0, 0%, 50%);
 }
 
-button {
+* button {
   font-family: "Gilroy", serif;
 }
 
-p {
+* p {
   font-family: "Gilroy", serif;
 }
 

@@ -74,7 +74,7 @@ body {
     font-size: 18px;
 }
 
-a {
+* a {
     font-family: $font-main;
     color: inherit;
     transition: color 0.2s ease-in;
@@ -83,11 +83,11 @@ a {
     }
 }
 
-button {
+* button {
     font-family: $font-main;
 }
 
-p {
+* p {
     font-family: $font-main;  
 }
 
