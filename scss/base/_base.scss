@@ -1,38 +1,6 @@
 // Noto font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
 // Gilroy font
-// @font-face {
-//     font-family: 'Gilroy';
-//     src: url("./../fonts/Gilroy-font/Gilroy-Regular.woff2")
-//         format("woff2"),
-//         url("./../fonts/Gilroy-font/Gilroy-Regular.woff")
-//         format("woff");
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
-
-// @font-face {
-//     font-family: 'Gilroy';
-//     src: url("./../fonts/Gilroy-font/Gilroy-Medium.woff2")
-//         format("woff2"),
-//         url("./../fonts/Gilroy-font/Gilroy-Medium.woff")
-//         format("woff");
-//     font-weight: 500;
-//     font-style: normal;
-//     font-display: swap;
-// }
-
-// @font-face {
-//     font-family: 'Gilroy';
-//     src: url("./../fonts/Gilroy-font/Gilroy-Semibold.woff2")
-//         format("woff2"),
-//         url("./../fonts/Gilroy-font/Gilroy-Semibold.woff")
-//         format("woff");
-//     font-weight: 600;
-//     font-style: normal;
-//     font-display: swap;
-// }
 @font-face {
     font-family: 'Gilroy';
     src: url('./../fonts/Gilroy-font/Gilroy-Regular.eot');
@@ -83,12 +51,11 @@ body {
     }
 }
 
-* button {
+* button,
+* p,
+* li,
+* h3 {
     font-family: $font-main;
-}
-
-* p {
-    font-family: $font-main;  
 }
 
 .container {

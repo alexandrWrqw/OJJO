@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header-page">
         <div class="header__top">
             <div class="container">
                 <nav class="nav">
@@ -81,153 +81,181 @@
                 </nav>
             </div>
         </div>
-        <div class="header__title">
-            <div class="container">
-                <h1 class="main-title">Долго, дорого, богато!</h1>
-                <button class="catalog-btn" onclick="document.location='./catalog.html'">Каталог изделий</button>
-            </div>
-        </div>
-        <div class="header__footer">
-            <div class="header__footer-border"></div>
-            <div class="container">
-                <div class="brands">
-                    <div class="brands-scroll scroll">
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                    </div>
-                    <div aria-hidden="true" class="brands-scroll scroll">
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                        <img src="./img/header/header-brand.svg" alt="brand"></img>
-                    </div>
-                </div>    
-            </div>
-        </div>
     </header>
     <main class="main">
-        <section class="assortment">
-            <div class="container">
-                <div class="assortment__title">
-                    <h3 class="subtitle">К мероприятиям</h3>
-                    <h2 class="title-2">Настоящая красота здесь!</h2>
-                </div>
-                <div class="assortment__select">
-                    <div class="assortment__select-buttons">
-                       <button class="button_marriage select-button">Свадьба</button> 
-                       <button class="button_husband select-button">Мужу</button> 
-                       <button class="button_wife select-button">Жене</button> 
-                       <button class="button_partner select-button">Партнеру</button> 
-                       <button class="button_collections select-button">Коллекции</button> 
-                       <button class="button_rarity select-button">Редкость</button> 
+        <section class="catalog">
+            <div class="catalog__container container">
+                <div class="sorting__menu"> <!-- "dropdown" - select на JS -->
+                    <div class="menu-brands dropdown"> 
+                        <button class="sorting__button" type="button">Бренд</button>
+                        <ul class="sorting__list">
+                            <li class="sorting__list-item" data-value="cartier">Cartier</li>
+                            <li class="sorting__list-item" data-value="bvlgari">Bvlgari</li>
+                            <li class="sorting__list-item" data-value="pandora">Pandora</li>
+                            <li class="sorting__list-item" data-value="pandora">Dolce & Gabanna</li>
+                            <li class="sorting__list-item" data-value="pandora">Tiffany</li>
+                            <li class="sorting__list-item" data-value="pandora">Varsace</li>
+                        </ul>
+                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
                     </div>
-                    <div class="assortment__select-cards">
-                        <a href="#!" class="assortment-card">
-                            <img class="assortment-card-img" src="./img/main/assortment/assortment-rings.jpg" alt="rings">
-                            <h3 class="assortment-card-title">Кольца</h3>
-                        </a>
-                        <a href="#!" class="assortment-card">
-                            <img class="assortment-card-img" src="./img/main/assortment/assortment-earrings.jpg" alt="earrings">
-                            <h3 class="assortment-card-title">Браслеты</h3>
-                        </a>
-                        <a href="#!" class="assortment-card">
-                            <img class="assortment-card-img" src="./img/main/assortment/assortment-pendants.jpg" alt="pendants">
-                            <h3 class="assortment-card-title">Подвески</h3>
-                        </a>
-                        <a href="#!" class="assortment-card">
-                            <img class="assortment-card-img" src="./img/main/assortment/assortment-cufflinks.jpg" alt="cufflinks">
-                            <h3 class="assortment-card-title">Запонки</h3>
-                        </a>
-                        <a href="#!" class="assortment-card">
-                            <img class="assortment-card-img" src="./img/main/assortment/assortment-bracelets.jpg" alt="bracelets">
-                            <h3 class="assortment-card-title">Серьги</h3>
-                        </a>
-                        <a href="#!" class="assortment-card">
-                            <img class="assortment-card-img" src="./img/main/assortment/assortment-watch.jpg" alt="watch">
-                            <h3 class="assortment-card-title">Часы</h3>
-                        </a>
+                    <div class="menu-price dropdown"> 
+                        <button class="sorting__button" type="button">Цена</button>
+                        <ul class="sorting__list">
+                            <li class="sorting__list-item" data-value="before-70k">До 70 000 ₽</li>
+                            <li class="sorting__list-item" data-value="before-120k">До 120 000 ₽</li>
+                            <li class="sorting__list-item" data-value="150+k">150 000+ ₽</li>
+                        </ul>
+                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
+                    </div>
+                    <div class="menu-whom dropdown"> 
+                        <button class="sorting__button" type="button">Для кого</button>
+                        <ul class="sorting__list">
+                            <li class="sorting__list-item" data-value="partner">Партнеру</li>
+                            <li class="sorting__list-item" data-value="sister">Сестре</li>
+                            <li class="sorting__list-item" data-value="brother">Брату</li>
+                        </ul>
+                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
+                    </div>
+                    <div class="menu-collection dropdown"> 
+                        <button class="sorting__button" type="button">Коллекция</button>
+                        <ul class="sorting__list">
+                            <li class="sorting__list-item" data-value="popular">Популярное</li>
+                            <li class="sorting__list-item" data-value="everyday">Повседневное</li>
+                            <li class="sorting__list-item" data-value="Events">Мероприятия</li>
+                        </ul>
+                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
+                    </div>
+                    <div class="menu-season dropdown"> 
+                        <button class="sorting__button" type="button">Сезон</button>
+                        <ul class="sorting__list">
+                            <li class="sorting__list-item" data-value="summer">Лето</li>
+                            <li class="sorting__list-item" data-value="spring">Весна</li>
+                            <li class="sorting__list-item" data-value="autumn">Осень</li>
+                            <li class="sorting__list-item" data-value="winter">Зима</li>
+                        </ul>
+                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
+                    </div>
+                    <div class="menu-event dropdown"> 
+                        <button class="sorting__button" type="button">Событие</button>
+                        <ul class="sorting__list">
+                            <li class="sorting__list-item" data-value="wedding">Свадьба</li>
+                            <li class="sorting__list-item" data-value="birthday">День рождения</li>
+                            <li class="sorting__list-item" data-value="final">Выпускной</li>
+                        </ul>
+                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
                     </div>
                 </div>
+                <div class="catalog__cards">
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="#!">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                </div>
+                <button class="more-btn">Покажите еще</button>
             </div>
         </section>
-        <section class="salons">
-            <div class="salons__container container">
-                <div class="salons__title">
-                    <h3 class="subtitle">Не знаете, что выбрать?</h3>
-                    <h2 class="title-2">Посетите наши салоны в Москве</h2>
-                </div>
-                <div class="salons__info">
+        <section class="feature">
+            <div class="feature__container container">
+                <div class="feature__info">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
                         egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
                         pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
+                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
+                        egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
+                        pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
+                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
+                        egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
+                        pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
+                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
+                        egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
+                        pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
                         imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.</p>
+                        <a href="#!"><h2 class="read-btn">Читать полностью</h2></a>
                 </div>
-                <button class="salons__button" type="button">Наши салоны</button>
-            </div>
-        </section>
-        <section class="articles">
-            <div class="articles__container container">
-                <div class="articles__title">
-                    <h3 class="subtitle">Полезные статьи</h3>
-                    <h2 class="title-2">Лучшие советы по подбору дорогих подарков</h2>
-                </div>
-                <div class="articles__cards">
-                    <a class="articles-card" href="#!">
-                        <img src="./img/main/articles/watch-for-wife.jpg" class="articles-card-img" alt="watch">
-                        <h3 class="articles-card-title">Как выбрать<br>часы для своей<br>будущей жены</h3>
-                    </a>
-                    <a class="articles-card" href="#!">
-                        <img src="./img/main/articles/cufflinks-for-husband.jpg" class="articles-card-img" alt="cufflinks">
-                        <h3 class="articles-card-title">Запонки для мужа:<br>7 ключевых правил<br>покупки аксессуара</h3>
-                    </a>
-                    <a class="articles-card" href="#!">
-                        <img src="./img/main/articles/rings-for-newlyweds.jpg" class="articles-card-img" alt="rings">
-                        <h3 class="articles-card-title">Как выбрать<br>обручальные кольца<br>молодоженам</h3>
-                    </a>
-                </div>
-                <button class="articles-button">Читать наш блог</button>
-            </div>
-        </section>
-        <section class="info">
-            <div class="container">
-                <div class="info__title">
-                    <h3 class="subtitle">#ojjo_jewerly</h3>
-                    <h2 class="title-2">Мы в социальных сетях</h2>
-                </div>
-                <div class="info__img-vid">
-                    <div class="content-video-1">
-                        <a class="link-video" href="#!">
-                            <img src="./img/main/info/video-link-1.jpg" alt="link-video">
-                            <svg width="70" height="70" viewbox="0 0 70 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35 0C15.6719 0 0 15.6719 0 35C0 54.3281 15.6719 70 35 70C54.3281 70 70 54.3281 70 35C70 15.6719 54.3281 0 35 0ZM46.2578 35.5391L29.1953 47.9531C29.1018 48.0203 28.9915 48.0605 28.8766 48.0691C28.7618 48.0777 28.6468 48.0545 28.5442 48.0021C28.4417 47.9496 28.3556 47.8699 28.2954 47.7716C28.2352 47.6734 28.2033 47.5605 28.2031 47.4453V22.6328C28.2027 22.5174 28.2343 22.4041 28.2944 22.3056C28.3544 22.207 28.4406 22.127 28.5434 22.0744C28.6461 22.0218 28.7614 21.9987 28.8765 22.0076C28.9916 22.0166 29.1019 22.0572 29.1953 22.125L46.2578 34.5312C46.3384 34.5883 46.4042 34.6638 46.4496 34.7515C46.4949 34.8391 46.5186 34.9364 46.5186 35.0352C46.5186 35.1339 46.4949 35.2312 46.4496 35.3189C46.4042 35.4065 46.3384 35.4821 46.2578 35.5391Z" />
-                            </svg>
-                        </a>
+                <div class="feature__cards">
+                    <div class="feature__card">
+                        <img src="./img/main/catalog/feature-cards/delivery.svg" alt="Доставка">
+                        <h3 class="feature-title">Бесплатная<br>доставка</h3>
                     </div>
-                    <div class="content-img">
-                        <img src="./img/main/info/content-1.jpg" alt="rings">
+                    <div class="feature__card">
+                        <img src="./img/main/catalog/feature-cards/design.svg" alt="Доставка">
+                        <h3 class="feature-title">Индивидуальный<br>дизайн</h3>
                     </div>
-                    <div class="content-img">
-                        <img src="./img/main/info/content-2.jpg" alt="stone">
+                    <div class="feature__card">
+                        <img src="./img/main/catalog/feature-cards/fitting.svg" alt="Доставка">
+                        <h3 class="feature-title">Бесплатная<br>примерка</h3>
                     </div>
-                    <div class="content-img">
-                        <img src="./img/main/info/content-3.jpg" alt="ring">
-                    </div>
-                    <div class="content-img">
-                        <img src="./img/main/info/content-4.jpg" alt="watch">
-                    </div>
-                    <div class="content-video-2">
-                        <a class="link-video" href="#!">
-                            <img src="./img/main/info/video-link-2.jpg" alt="link-video">
-                            <svg width="70" height="70" viewbox="0 0 70 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35 0C15.6719 0 0 15.6719 0 35C0 54.3281 15.6719 70 35 70C54.3281 70 70 54.3281 70 35C70 15.6719 54.3281 0 35 0ZM46.2578 35.5391L29.1953 47.9531C29.1018 48.0203 28.9915 48.0605 28.8766 48.0691C28.7618 48.0777 28.6468 48.0545 28.5442 48.0021C28.4417 47.9496 28.3556 47.8699 28.2954 47.7716C28.2352 47.6734 28.2033 47.5605 28.2031 47.4453V22.6328C28.2027 22.5174 28.2343 22.4041 28.2944 22.3056C28.3544 22.207 28.4406 22.127 28.5434 22.0744C28.6461 22.0218 28.7614 21.9987 28.8765 22.0076C28.9916 22.0166 29.1019 22.0572 29.1953 22.125L46.2578 34.5312C46.3384 34.5883 46.4042 34.6638 46.4496 34.7515C46.4949 34.8391 46.5186 34.9364 46.5186 35.0352C46.5186 35.1339 46.4949 35.2312 46.4496 35.3189C46.4042 35.4065 46.3384 35.4821 46.2578 35.5391Z" />
-                            </svg>
-                        </a>
+                    <div class="feature__card">
+                        <img src="./img/main/catalog/feature-cards/approach.svg" alt="Доставка">
+                        <h3 class="feature-title">Личный<br>подход</h3>
                     </div>
                 </div>
             </div>

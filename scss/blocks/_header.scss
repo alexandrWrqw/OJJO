@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 950px;
-    padding: 25px 0;
+    padding: 25px 0 0 0;
     color: $mainWhite;
     font-weight: normal;
     background: linear-gradient(0deg, rgba(51, 51, 51, 0.87) 0%, 
@@ -63,20 +63,66 @@
         height: 30px;
         border-top: 1px solid $mainWhite;
     }
+}
 
-    &-brands {
+.brands {
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    gap: 20px;
+
+    &-scroll {
+        flex-shrink: 0;
         display: flex;
         justify-content: space-between;
+        min-width: 100%;
+    }
 
-        .brands-border {
-            height: 60px;
-            width: 1px;
-            border-right: 1px solid $mainWhite;
-        }
+    &::after,
+    &::before {
+        content: '';
+        height: 100%;
+        top: 0;
+        width: 10%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgb(68, 68, 68, 1) 100%
+        );
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(
+            90deg,
+            rgb(68, 67, 68, 1) 0%,
+            rgb(0, 0, 0, 0) 100%
+        );
+    }
+
+    .scroll {
+        animation: scroll 20s linear infinite;
+        animation-direction: reverse;
+    }
+
+    &:hover .scroll {
+        animation-play-state: paused;
     }
 }
 
+@keyframes scroll {
+    from {
+    transform: translateX(0);
+    }
 
-
-
-
+    to {
+    transform: translateX(calc(-100% - 20px));
+    }
+}

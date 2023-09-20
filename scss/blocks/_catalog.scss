@@ -1,0 +1,194 @@
+.catalog {
+    padding: 100px 0;
+    font-family: $font-main;
+}
+// Select 
+.sorting__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sorting__button {
+    width: 160px;
+    padding: 5px 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 150%;
+    border-bottom: 1px solid $greyBorder;
+    position: relative;
+    transition: border 0.2s ease-in;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-width: 9.5px 6px 0 6px;
+        border-color: $mainBlack transparent transparent transparent;
+        border-style: solid;
+        pointer-events: none;
+        transition: border 0.2s ease-in;
+    }
+
+    &:focus,
+    &--active,
+    &:hover {
+        border-bottom: 1px solid $mainBlack;
+    }
+
+    &--active::after,
+    &:focus::after {
+        border-color: $greyBorder transparent transparent transparent; 
+    }
+}
+
+.dropdown {
+    position: relative;
+}
+
+.sorting__list {
+    position: absolute;
+    left: 0;
+    top: 34px;
+    overflow: hidden;
+    z-index: 3;
+    background-color: $bg;
+    display: none;
+
+    &--visible {
+        display: block;
+    }
+
+    &-item {
+        width: 160px;
+        padding: 5px 0;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 150%;
+        cursor: pointer;
+        border-bottom: 1px solid $greyBorder;
+        transition: border 0.2s ease-in;
+
+        &:hover {
+            border-bottom: 1px solid $mainBlack;
+        }
+    }
+}
+
+.sorting__input-hidden {
+    display: none;
+}
+// Cards 
+.catalog__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 95px 0;
+    row-gap: 120px;
+    column-gap: 30px;
+    height: 1200px;
+    overflow-y: hidden;
+}
+
+.catalog__cards--active{
+    height: auto;
+    overflow-y: visible;
+}
+
+.catalog__card {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 35px;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.2s ease-in;
+
+    & img {
+        margin-bottom: 25px;
+        transition: transform 0.2s ease-in, filter 0.2s ease-in;
+    }
+
+    & .card-subtitle {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 150%;
+        margin-bottom: 10px;
+    }
+
+    & .card-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 15px;
+    }
+
+    & .card-btn {
+        color: $mainWhite;
+        background-color: $mainBlack;
+        border: 1px solid $mainBlack;
+        padding: 10px 20px;
+        transition: background-color 0.2s ease-in;
+
+        &:hover {
+            background-color: $mainWhite;
+            color: $mainBlack;
+        }
+    }
+
+    &:hover {
+        background-color: #e7e7e7;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background: $mainBlack;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background: $mainBlack;
+        }
+
+        & img {
+            transform: scale(1.05);
+            filter: contrast(1.1);
+        }
+    }
+}
+
+.more-btn {
+    display: flex;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    color: $mainWhite;
+    background-color: $mainBlack;
+    border: 1px solid $mainBlack;
+    padding: 15px 35px;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+
+    &:hover {
+        color: $mainBlack;
+        background-color: $mainWhite;
+    }
+}
+
+.more-btn--active {
+    display: none;
+}
