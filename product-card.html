@@ -83,153 +83,52 @@
         </div>
     </header>
     <main class="main">
-        <section class="catalog">
-            <div class="catalog__container container">
+        <section class="product-card">
+            <div class="container">
                 <div class="nav-link">
                     <a href="./index.html">Главная</a>
                     <span>/</span>
-                    <h3>Каталог</h3>
+                    <a href="./catalog.html">Каталог</a>
+                    <span>/</span>
+                    <h3>Подвеска Dolce & Gabara</h3>
                 </div>
-                <div class="sorting__menu"> <!-- "dropdown" - select на JS -->
-                    <div class="menu-brands dropdown"> 
-                        <button class="sorting__button" type="button">Бренд</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="cartier">Cartier</li>
-                            <li class="sorting__list-item" data-value="bvlgari">Bvlgari</li>
-                            <li class="sorting__list-item" data-value="pandora">Pandora</li>
-                            <li class="sorting__list-item" data-value="pandora">Dolce & Gabanna</li>
-                            <li class="sorting__list-item" data-value="pandora">Tiffany</li>
-                            <li class="sorting__list-item" data-value="pandora">Varsace</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
+                <div class="product__wrapper">
+                    <div class="product__images">
+                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
+                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
+                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
+                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
                     </div>
-                    <div class="menu-price dropdown"> 
-                        <button class="sorting__button" type="button">Цена</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="before-70k">До 70 000 ₽</li>
-                            <li class="sorting__list-item" data-value="before-120k">До 120 000 ₽</li>
-                            <li class="sorting__list-item" data-value="150+k">150 000+ ₽</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-whom dropdown"> 
-                        <button class="sorting__button" type="button">Для кого</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="partner">Партнеру</li>
-                            <li class="sorting__list-item" data-value="sister">Сестре</li>
-                            <li class="sorting__list-item" data-value="brother">Брату</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-collection dropdown"> 
-                        <button class="sorting__button" type="button">Коллекция</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="popular">Популярное</li>
-                            <li class="sorting__list-item" data-value="everyday">Повседневное</li>
-                            <li class="sorting__list-item" data-value="Events">Мероприятия</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-season dropdown"> 
-                        <button class="sorting__button" type="button">Сезон</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="summer">Лето</li>
-                            <li class="sorting__list-item" data-value="spring">Весна</li>
-                            <li class="sorting__list-item" data-value="autumn">Осень</li>
-                            <li class="sorting__list-item" data-value="winter">Зима</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-event dropdown"> 
-                        <button class="sorting__button" type="button">Событие</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="wedding">Свадьба</li>
-                            <li class="sorting__list-item" data-value="birthday">День рождения</li>
-                            <li class="sorting__list-item" data-value="final">Выпускной</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
+                    <div class="product__info">
+                        <div class="product__info-wrapper">
+                            <h2 class="product-title">Подвеска Dolce & Gabbara</h2>
+                            <h3 class="product-subtitle">Категория:<span>Подвески</span>Бренд:<span>Dolce & Gabbara</span></h3>
+                            <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mattis
+                                scelerisque odio nunc. Ipsum quis facilisis turpis vulputate. Viverra
+                                dignissim in nec phasellus. Tincidunt est ipsum diam, vestibulum
+                                dignissim dui diam. Et nulla sit convallis orci est, fames sit luctus lacus.
+                                Nunc donec malesuada amet eget eget pharetra. Ultricies et, ac varius
+                                at amet viverra feugiat non massa.<br>
+                                Vel vel in urna, sodales urna ac sed felis. Tellus augue et senectus
+                                malesuada faucibus sollicitudin ornare. Sit non et sit enim in ornare velit.
+                                Ac imperdiet vitae, orci, nec scelerisque enim sit enim risus.
+                                Et nulla sit convallis orci est, fames sit luctus lacus.</p>
+                            <div class="product-price">
+                                <span class="product-price-number">200 000 ₽</span>
+                            </div>
+                            <div class="product__buttons">
+                                <button class="buy-btn">Купить</button>
+                                <button class="cart-btn">Добавить в корзину</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="catalog__cards">
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                </div>
-                <button class="more-btn">Покажите еще</button>
             </div>
         </section>
         <section class="feature">
             <div class="feature__container container">
                 <div class="feature__info">
+                    <h3 class="feature__title">Полное описание товара</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
                         egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
                         pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
@@ -261,6 +160,34 @@
                     <div class="feature__card">
                         <img src="./img/main/catalog/feature-cards/approach.svg" alt="Доставка">
                         <h3 class="feature-title">Личный<br>подход</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-offers">
+            <div class="container">
+                <div class="offers-title">
+                    <h3 class="subtitle">Мы подготовили для вас кое-что еще</h3>
+                    <h2 class="title-2">Товары, которые могут Вам понравиться</h2>
+                </div>
+                <div class="offers-cards">
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
+                        <h3 class="card-subtitle">Подвеска</h3>
+                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
+                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
                     </div>
                 </div>
             </div>

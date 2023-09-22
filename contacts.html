@@ -83,234 +83,73 @@
         </div>
     </header>
     <main class="main">
-        <section class="catalog">
-            <div class="catalog__container container">
+        <section class="contacts">
+            <div class="container">
                 <div class="nav-link">
                     <a href="./index.html">Главная</a>
                     <span>/</span>
-                    <h3>Каталог</h3>
+                    <h3>Контакты</h3>
                 </div>
-                <div class="sorting__menu"> <!-- "dropdown" - select на JS -->
-                    <div class="menu-brands dropdown"> 
-                        <button class="sorting__button" type="button">Бренд</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="cartier">Cartier</li>
-                            <li class="sorting__list-item" data-value="bvlgari">Bvlgari</li>
-                            <li class="sorting__list-item" data-value="pandora">Pandora</li>
-                            <li class="sorting__list-item" data-value="pandora">Dolce & Gabanna</li>
-                            <li class="sorting__list-item" data-value="pandora">Tiffany</li>
-                            <li class="sorting__list-item" data-value="pandora">Varsace</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-price dropdown"> 
-                        <button class="sorting__button" type="button">Цена</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="before-70k">До 70 000 ₽</li>
-                            <li class="sorting__list-item" data-value="before-120k">До 120 000 ₽</li>
-                            <li class="sorting__list-item" data-value="150+k">150 000+ ₽</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-whom dropdown"> 
-                        <button class="sorting__button" type="button">Для кого</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="partner">Партнеру</li>
-                            <li class="sorting__list-item" data-value="sister">Сестре</li>
-                            <li class="sorting__list-item" data-value="brother">Брату</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-collection dropdown"> 
-                        <button class="sorting__button" type="button">Коллекция</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="popular">Популярное</li>
-                            <li class="sorting__list-item" data-value="everyday">Повседневное</li>
-                            <li class="sorting__list-item" data-value="Events">Мероприятия</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-season dropdown"> 
-                        <button class="sorting__button" type="button">Сезон</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="summer">Лето</li>
-                            <li class="sorting__list-item" data-value="spring">Весна</li>
-                            <li class="sorting__list-item" data-value="autumn">Осень</li>
-                            <li class="sorting__list-item" data-value="winter">Зима</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
-                    </div>
-                    <div class="menu-event dropdown"> 
-                        <button class="sorting__button" type="button">Событие</button>
-                        <ul class="sorting__list">
-                            <li class="sorting__list-item" data-value="wedding">Свадьба</li>
-                            <li class="sorting__list-item" data-value="birthday">День рождения</li>
-                            <li class="sorting__list-item" data-value="final">Выпускной</li>
-                        </ul>
-                        <input class="sorting__input-hidden" type="text" name="select-category" value="" required>
+                <div class="contacts__header">
+                    <h2 class="contacts__title">Контакты</h2>
+                    <div class="contacts__wrapper">
+                        <div class="office">
+                            <h3 class="office-title _title">Главный офис</h3>
+                            <div class="office-content _row">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="Vector" d="M15.8337 7.49996C15.8337 6.73392 15.6828 5.97537 15.3896 5.26764C15.0965 4.55991 14.6668 3.91684 14.1251 3.37517C13.5834 2.83349 12.9404 2.40381 12.2326 2.11066C11.5249 1.81751 10.7664 1.66663 10.0003 1.66663C9.23428 1.66663 8.47574 1.81751 7.76801 2.11066C7.06027 2.40381 6.41721 2.83349 5.87554 3.37517C5.33386 3.91684 4.90418 4.55991 4.61103 5.26764C4.31788 5.97537 4.16699 6.73392 4.16699 7.49996C4.16699 8.65579 4.50866 9.73079 5.08783 10.6375H5.08116C7.04783 13.7166 10.0003 18.3333 10.0003 18.3333L14.9195 10.6375H14.9137C15.514 9.7011 15.8333 8.61224 15.8337 7.49996ZM10.0003 9.99996C9.33729 9.99996 8.7014 9.73657 8.23256 9.26773C7.76372 8.79889 7.50033 8.163 7.50033 7.49996C7.50033 6.83692 7.76372 6.20103 8.23256 5.73219C8.7014 5.26335 9.33729 4.99996 10.0003 4.99996C10.6634 4.99996 11.2993 5.26335 11.7681 5.73219C12.2369 6.20103 12.5003 6.83692 12.5003 7.49996C12.5003 8.163 12.2369 8.79889 11.7681 9.26773C11.2993 9.73657 10.6634 9.99996 10.0003 9.99996Z" fill="#333333"/>
+                                </svg>
+                                <div class="office-content">Невский 140, офис 1-5</div>
+                            </div>
+                        </div>
+                        <div class="phones">
+                            <h3 class="phones-title _title">Телефоны</h3>
+                            <div class="phones-content _row">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="Vector" d="M12.7068 13.425L14.1068 12.025C14.2953 11.8388 14.5339 11.7113 14.7935 11.6581C15.0531 11.6048 15.3226 11.6281 15.5693 11.725L17.2755 12.4063C17.5248 12.5074 17.7385 12.6801 17.8898 12.9026C18.041 13.125 18.1231 13.3873 18.1255 13.6563V16.7813C18.1241 16.9643 18.0856 17.1451 18.0124 17.3128C17.9393 17.4805 17.8329 17.6317 17.6998 17.7573C17.5666 17.8828 17.4095 17.9801 17.2377 18.0433C17.066 18.1065 16.8833 18.1343 16.7005 18.125C4.74426 17.3813 2.33176 7.25628 1.87551 3.38128C1.85433 3.19099 1.87368 2.99837 1.93229 2.81609C1.9909 2.63382 2.08744 2.46602 2.21555 2.32374C2.34367 2.18145 2.50046 2.0679 2.67561 1.99057C2.85076 1.91323 3.0403 1.87385 3.23176 1.87503H6.25051C6.51989 1.87582 6.78287 1.95719 7.00563 2.10867C7.22839 2.26015 7.40074 2.4748 7.50051 2.72503L8.18176 4.43128C8.28192 4.67694 8.30747 4.94668 8.25523 5.20678C8.20299 5.46689 8.07526 5.70584 7.88801 5.89378L6.48801 7.29378C6.48801 7.29378 7.29426 12.75 12.7068 13.425Z" fill="#333333"/>
+                                </svg>
+                                <span>8 (812) 458-56-45</span>
+                            </div>
+                            <div class="phones-content _row">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="Vector" d="M12.7068 13.425L14.1068 12.025C14.2953 11.8388 14.5339 11.7113 14.7935 11.6581C15.0531 11.6048 15.3226 11.6281 15.5693 11.725L17.2755 12.4063C17.5248 12.5074 17.7385 12.6801 17.8898 12.9026C18.041 13.125 18.1231 13.3873 18.1255 13.6563V16.7813C18.1241 16.9643 18.0856 17.1451 18.0124 17.3128C17.9393 17.4805 17.8329 17.6317 17.6998 17.7573C17.5666 17.8828 17.4095 17.9801 17.2377 18.0433C17.066 18.1065 16.8833 18.1343 16.7005 18.125C4.74426 17.3813 2.33176 7.25628 1.87551 3.38128C1.85433 3.19099 1.87368 2.99837 1.93229 2.81609C1.9909 2.63382 2.08744 2.46602 2.21555 2.32374C2.34367 2.18145 2.50046 2.0679 2.67561 1.99057C2.85076 1.91323 3.0403 1.87385 3.23176 1.87503H6.25051C6.51989 1.87582 6.78287 1.95719 7.00563 2.10867C7.22839 2.26015 7.40074 2.4748 7.50051 2.72503L8.18176 4.43128C8.28192 4.67694 8.30747 4.94668 8.25523 5.20678C8.20299 5.46689 8.07526 5.70584 7.88801 5.89378L6.48801 7.29378C6.48801 7.29378 7.29426 12.75 12.7068 13.425Z" fill="#333333"/>
+                                </svg>
+                                <span>8 (911) 878-00-00</span>
+                            </div>
+                        </div>
+                        <div class="mail">
+                            <h3 class="mail-title _title">E-mail</h3>
+                            <div class="mail-content _row">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="Vector" d="M17.1886 4.03784H2.811C2.67544 4.038 2.54548 4.09194 2.44964 4.18782C2.3538 4.28369 2.29991 4.41368 2.2998 4.54924V5.57804C2.2998 5.62544 2.3512 5.67984 2.3932 5.70184L9.9504 10.0184C9.96976 10.0295 9.99171 10.0352 10.014 10.035C10.0368 10.0351 10.0592 10.029 10.0788 10.0174L17.4076 5.70604C17.4488 5.68304 17.558 5.62224 17.599 5.59424C17.6486 5.56044 17.6998 5.52984 17.6998 5.46924V4.54904C17.6996 4.41351 17.6457 4.28358 17.5499 4.18774C17.4541 4.09191 17.3241 4.038 17.1886 4.03784Z" fill="#333333"/>
+                                    <path id="Vector_2" d="M17.6365 7.12922C17.6169 7.118 17.5946 7.11217 17.5719 7.11231C17.5493 7.11245 17.5271 7.11856 17.5075 7.13002L13.3601 9.57022C13.3436 9.57985 13.3295 9.59308 13.3187 9.60892C13.308 9.62477 13.301 9.64282 13.2982 9.66174C13.2954 9.68067 13.297 9.69997 13.3027 9.71823C13.3083 9.73649 13.3181 9.75324 13.3311 9.76722L17.4791 14.2386C17.491 14.2515 17.5055 14.2618 17.5215 14.2688C17.5376 14.2759 17.555 14.2795 17.5725 14.2794C17.6064 14.2794 17.6389 14.2659 17.6628 14.2419C17.6868 14.218 17.7003 14.1855 17.7003 14.1516V7.24022C17.7004 7.21774 17.6946 7.19563 17.6834 7.17614C17.6722 7.15665 17.656 7.14046 17.6365 7.12922Z" fill="#333333"/>
+                                    <path id="Vector_3" d="M12.1648 10.3897C12.1451 10.3682 12.1186 10.3542 12.0898 10.3499C12.061 10.3456 12.0316 10.3513 12.0066 10.3661L10.3442 11.3443C10.2468 11.4006 10.1364 11.4305 10.0239 11.4313C9.91142 11.432 9.80068 11.4035 9.70255 11.3485L8.23955 10.5127C8.21593 10.4992 8.18865 10.4936 8.16164 10.4967C8.13464 10.4998 8.10932 10.5114 8.08935 10.5299L2.53375 15.6831C2.51919 15.6967 2.508 15.7135 2.5011 15.7322C2.49419 15.7509 2.49174 15.771 2.49396 15.7908C2.49617 15.8106 2.50298 15.8296 2.51385 15.8464C2.52472 15.8631 2.53934 15.877 2.55655 15.8871C2.64295 15.9379 2.72635 15.9621 2.81115 15.9621H17.0418C17.0667 15.9621 17.091 15.9549 17.1118 15.9412C17.1326 15.9275 17.1489 15.908 17.1588 15.8851C17.1687 15.8623 17.1718 15.8371 17.1676 15.8126C17.1634 15.7881 17.1521 15.7654 17.1352 15.7473L12.1648 10.3897Z" fill="#333333"/>
+                                    <path id="Vector_4" d="M6.86661 9.92028C6.88132 9.90668 6.89263 9.88981 6.89962 9.87102C6.90661 9.85224 6.90909 9.83208 6.90685 9.81217C6.90461 9.79225 6.89772 9.77314 6.88673 9.75638C6.87575 9.73962 6.86097 9.72568 6.84361 9.71568L2.49041 7.22928C2.47098 7.21825 2.449 7.21252 2.42666 7.21265C2.40432 7.21278 2.3824 7.21877 2.36311 7.23003C2.34381 7.24129 2.32781 7.25742 2.3167 7.2768C2.30559 7.29618 2.29977 7.31814 2.29981 7.34048V13.8645C2.29967 13.8894 2.30683 13.9138 2.32043 13.9347C2.33402 13.9556 2.35343 13.972 2.37627 13.982C2.39911 13.9919 2.42437 13.995 2.44892 13.9907C2.47347 13.9865 2.49624 13.9751 2.51441 13.9581L6.86661 9.92028Z" fill="#333333"/>
+                                </svg>
+                                <span>office@ojjo.com</span>
+                            </div>
+                        </div>
+                        <div class="extra-office">
+                            <h3 class="extra-title _title">Доп. адреса</h3>
+                            <div class="extra-content _row">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="Vector" d="M15.8337 7.49996C15.8337 6.73392 15.6828 5.97537 15.3896 5.26764C15.0965 4.55991 14.6668 3.91684 14.1251 3.37517C13.5834 2.83349 12.9404 2.40381 12.2326 2.11066C11.5249 1.81751 10.7664 1.66663 10.0003 1.66663C9.23428 1.66663 8.47574 1.81751 7.76801 2.11066C7.06027 2.40381 6.41721 2.83349 5.87554 3.37517C5.33386 3.91684 4.90418 4.55991 4.61103 5.26764C4.31788 5.97537 4.16699 6.73392 4.16699 7.49996C4.16699 8.65579 4.50866 9.73079 5.08783 10.6375H5.08116C7.04783 13.7166 10.0003 18.3333 10.0003 18.3333L14.9195 10.6375H14.9137C15.514 9.7011 15.8333 8.61224 15.8337 7.49996ZM10.0003 9.99996C9.33729 9.99996 8.7014 9.73657 8.23256 9.26773C7.76372 8.79889 7.50033 8.163 7.50033 7.49996C7.50033 6.83692 7.76372 6.20103 8.23256 5.73219C8.7014 5.26335 9.33729 4.99996 10.0003 4.99996C10.6634 4.99996 11.2993 5.26335 11.7681 5.73219C12.2369 6.20103 12.5003 6.83692 12.5003 7.49996C12.5003 8.163 12.2369 8.79889 11.7681 9.26773C11.2993 9.73657 10.6634 9.99996 10.0003 9.99996Z" fill="#333333"/>
+                                </svg>
+                                <span>Невский 142, офис 1-5</span>
+                            </div>
+                            <div class="extra-content _row">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="Vector" d="M15.8337 7.49996C15.8337 6.73392 15.6828 5.97537 15.3896 5.26764C15.0965 4.55991 14.6668 3.91684 14.1251 3.37517C13.5834 2.83349 12.9404 2.40381 12.2326 2.11066C11.5249 1.81751 10.7664 1.66663 10.0003 1.66663C9.23428 1.66663 8.47574 1.81751 7.76801 2.11066C7.06027 2.40381 6.41721 2.83349 5.87554 3.37517C5.33386 3.91684 4.90418 4.55991 4.61103 5.26764C4.31788 5.97537 4.16699 6.73392 4.16699 7.49996C4.16699 8.65579 4.50866 9.73079 5.08783 10.6375H5.08116C7.04783 13.7166 10.0003 18.3333 10.0003 18.3333L14.9195 10.6375H14.9137C15.514 9.7011 15.8333 8.61224 15.8337 7.49996ZM10.0003 9.99996C9.33729 9.99996 8.7014 9.73657 8.23256 9.26773C7.76372 8.79889 7.50033 8.163 7.50033 7.49996C7.50033 6.83692 7.76372 6.20103 8.23256 5.73219C8.7014 5.26335 9.33729 4.99996 10.0003 4.99996C10.6634 4.99996 11.2993 5.26335 11.7681 5.73219C12.2369 6.20103 12.5003 6.83692 12.5003 7.49996C12.5003 8.163 12.2369 8.79889 11.7681 9.26773C11.2993 9.73657 10.6634 9.99996 10.0003 9.99996Z" fill="#333333"/>
+                                </svg>
+                                <span>Загородный 145, офис 11-15</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="catalog__cards">
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                    <div class="catalog__card">
-                        <img src="./img/main/catalog/catalog-item.jpg" alt="Подвеска">
-                        <h3 class="card-subtitle">Подвеска</h3>
-                        <h2 class="card-title"><a href="./product-card.html">Dolce & Gabanna</a></h2>
-                        <button class="card-btn" onclick="document.location='!#'">175 000 ₽</button>
-                    </div>
-                </div>
-                <button class="more-btn">Покажите еще</button>
-            </div>
-        </section>
-        <section class="feature">
-            <div class="feature__container container">
-                <div class="feature__info">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
-                        egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
-                        pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
-                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
-                        egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
-                        pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
-                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
-                        egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
-                        pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
-                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque
-                        egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec
-                        pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices
-                        imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.</p>
-                    <button class="read-btn">Читать полностью</button>
-                </div>
-                <div class="feature__cards">
-                    <div class="feature__card">
-                        <img src="./img/main/catalog/feature-cards/delivery.svg" alt="Доставка">
-                        <h3 class="feature-title">Бесплатная<br>доставка</h3>
-                    </div>
-                    <div class="feature__card">
-                        <img src="./img/main/catalog/feature-cards/design.svg" alt="Доставка">
-                        <h3 class="feature-title">Индивидуальный<br>дизайн</h3>
-                    </div>
-                    <div class="feature__card">
-                        <img src="./img/main/catalog/feature-cards/fitting.svg" alt="Доставка">
-                        <h3 class="feature-title">Бесплатная<br>примерка</h3>
-                    </div>
-                    <div class="feature__card">
-                        <img src="./img/main/catalog/feature-cards/approach.svg" alt="Доставка">
-                        <h3 class="feature-title">Личный<br>подход</h3>
-                    </div>
+                <div class="map">
+                    <img src="./img/main/contacts/map.jpg">
                 </div>
             </div>
-        </section>
-        <section class="cta">
-            <div class="cta__container container">
-                <div class="cta__title">
-                    <h3 class="subtitle">Полезные советы и персональный предложения</h3>
-                    <h2 class="title-2">Эксклюзивная рассылка</h2>
-                </div>
-                <div class="cta__wrapper">
-                    <div class="cta__offers">
-                        <ul class="offers-list">
-                            <li>
-                                <a href="#!">
-                                    <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 8.5L7.25 10.6651L7.25 6.33494L11 8.5Z" fill="currentColor"/>
-                                    <path d="M4.75 2.00481L16 8.5L4.75 14.9952L4.75 2.00481Z" stroke="currentColor"/>
-                                    </svg>
-                                    <span>Личный менеджер</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 8.5L7.25 10.6651L7.25 6.33494L11 8.5Z" fill="currentColor"/>
-                                    <path d="M4.75 2.00481L16 8.5L4.75 14.9952L4.75 2.00481Z" stroke="currentColor"/>
-                                    </svg>
-                                    <span>Доставка и оформление</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 8.5L7.25 10.6651L7.25 6.33494L11 8.5Z" fill="currentColor"/>
-                                    <path d="M4.75 2.00481L16 8.5L4.75 14.9952L4.75 2.00481Z" stroke="currentColor"/>
-                                    </svg>
-                                    <span>Индивидуальный дизайн</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cta__form">
-                        <form action="" class="form">
-                            <input class="form__input" type="email" placeholder="ваш e-mail">
-                            <button class="form__btn" type="submit">Отправить</button>
-                        </form>
-                    </div>
-                </div>
-            <div>
         </section>
     </main>
     <footer class="footer">

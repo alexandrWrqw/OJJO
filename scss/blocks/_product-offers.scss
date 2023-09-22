@@ -1,0 +1,15 @@
+.product-offers {
+    color: $mainBlack;
+    text-align: center;
+    margin-bottom: 155px;
+}
+
+.offers-title > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.offers-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+}

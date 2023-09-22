@@ -46,19 +46,24 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
     });
 });
 // More-btn catalog block
-const catalogCards = document.querySelector('.catalog__cards');
-const moreBtn = document.querySelector('.more-btn');
+document.querySelectorAll('.catalog__container').forEach(function (catalogWrapper) {
+    const catalogCards = catalogWrapper.querySelector('.catalog__cards');
+    const moreBtn = catalogWrapper.querySelector('.more-btn');
 
-moreBtn.addEventListener('click', function() {
-    catalogCards.classList.toggle('catalog__cards--active');
-    this.textContent = this.textContent === 'Покажите еще' ? 'Скрыть' : 'Покажите еще';
+    moreBtn.addEventListener('click', function() {
+        catalogCards.classList.toggle('catalog__cards--active');
+        this.textContent = this.textContent === 'Покажите еще' ? 'Скрыть' : 'Покажите еще';
+    });
 });
 // Read-btn feature block
-const readBtn = document.querySelector('.read-btn');
-const featureInfo = document.querySelector('.feature__info');
+document.querySelectorAll('.feature__container').forEach(function (featureWrapper) {
+    const readBtn = featureWrapper.querySelector('.read-btn');
+    const featureInfo = featureWrapper.querySelector('.feature__info');
 
-readBtn.addEventListener('click', function() {
-    featureInfo.classList.toggle('feature__info--active');
-    this.textContent = this.textContent === 'Читать полностью' ? 'Скрыть' : 'Читать полностью';
+    readBtn.addEventListener('click', function() {
+        featureInfo.classList.toggle('feature__info--active');
+        this.textContent = this.textContent === 'Читать полностью' ? 'Скрыть' : 'Читать полностью';
+    });
 });
+
 

@@ -1,0 +1,150 @@
+.product-card {
+    margin-bottom: 120px;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+
+    & a {
+        border-bottom: 1px solid $mainBlack;
+    }
+
+    & span {
+        margin: 0 15px 0 15px;
+    }
+}
+
+.product__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.product__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    max-height: 580px;
+    max-width: 540px; 
+
+    & img:first-child {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+}
+
+.product__info {
+    height: 580px;
+    width: 540px;
+    border: 1px solid $greyBorder;
+    padding: 10px;
+}
+
+.product__info-wrapper {
+    border: 1px solid $greyBorder;
+    padding: 40px 30px;
+    font-family: $font-main;
+    max-height: 560px;
+
+    & > *:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.product-title {
+    color: $mainBlack;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.product-subtitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 150%;
+    color: #979797;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $greyBorder;
+
+    & span {
+        margin-left: 15px;
+    }
+
+    & span:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+.product-text {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 150%;
+}
+
+.product-price {
+
+    &-number {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        color: $mainBlack;
+    }
+}
+
+.product__buttons {
+
+    & > *:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .buy-btn {
+        background-color: $mainBlack;
+        color: $mainWhite;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        border: 1px solid $mainBlack;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    
+        &:hover {
+            background-color: $mainWhite;
+            color: $mainBlack;
+        }
+    }
+    
+    .cart-btn {
+        background-color: $mainWhite;
+        color: $mainBlack;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        border: 1px solid $mainBlack;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    
+        &:hover {
+            background-color: $mainBlack;
+            color: $mainWhite;
+        }
+    }
+}
+
+.feature__title {
+    color: $mainBlack;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
