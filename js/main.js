@@ -53,6 +53,14 @@ document.querySelectorAll('.catalog__container').forEach(function (catalogWrappe
     moreBtn.addEventListener('click', function() {
         catalogCards.classList.toggle('catalog__cards--active');
         this.textContent = this.textContent === 'Покажите еще' ? 'Скрыть' : 'Покажите еще';
+
+        if (this.textContent !== 'Скрыть') {
+            window.scrollTo({
+                top: 1000,
+                left: 0,
+                behavior: 'smooth'
+            });
+        };
     });
 });
 // Read-btn feature block
