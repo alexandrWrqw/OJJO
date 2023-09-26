@@ -1,12 +1,12 @@
 .assortment {
-    padding: 100px 0 120px 0;
+    margin: 100px 0 120px 0;
 
     @include mediaMobile {
-        padding: 60px 0 80px 0;
+        margin: 60px 0 80px 0;
     }
 
     @include mediaSMobile {
-        padding: 45px 0 65px 0;
+        margin: 45px 0 65px 0;
     }
 }
 
@@ -32,18 +32,26 @@
         }
 
         @include mediaTablet {
-            grid-template-columns: repeat(3, 145px);
-            font-size: 16px;
-            margin: 40px 0 35px 0;
+            grid-template-columns: repeat(3, 195px);
+            font-size: 24px;
+            gap: 30px;
+        }
+
+        @include mediaSTablet {
+            grid-template-columns: repeat(2, 195px);
+            font-size: 24px;
+            gap: 30px;
         }
         
         @include mediaMobile {
-            grid-template-columns: repeat(2, 145px);
-            font-size: 14px;
+            grid-template-columns: repeat(2, 175px);
+            font-size: 20px;
         }
 
         @include mediaSMobile {
-            grid-template-columns: repeat(2, 125px)
+            grid-template-columns: repeat(2, 155px);
+            font-size: 18px;
+            gap: 20px;
         }
 
         .select-button {
@@ -59,16 +67,22 @@
             transition: 0.2s ease-in;
 
             @include mediaTablet {
-                width: 145px;
+                width: 195px;
+                height: 91px;
+            }
+
+            @include mediaSTablet {
+                height: 81px;
             }
 
             @include mediaMobile {
-                height: 51px;
+                width: 165px;
+                height: 71px;
             }
 
             @include mediaSMobile {
-                width: 125px;
-                height: 41px;
+                width: 135px;
+                height: 51px;
             }
 
             &:hover {
@@ -78,18 +92,24 @@
                 width: 171px;
                 height: 67px;
                 margin: 0 -1px -6px 0;
-
+                
                 @include mediaTablet {
-                    width: 151px;
+                    width: 201px;
+                    height: 97px;
+                }
+
+                @include mediaSTablet {
+                    height: 87px;
                 }
 
                 @include mediaMobile {
-                    height: 57px;
+                    width: 172px;
+                    height: 77px;
                 }
 
                 @include mediaSMobile {
-                    width: 131px;
-                    height: 47px;
+                    width: 142px;
+                    height: 57px;
                 }
             }
         }
@@ -102,16 +122,16 @@
         justify-content: center;
 
         @media screen and (max-width: 778px) {
-            grid-template-columns: repeat(2, 220px);
+            grid-template-columns: repeat(1, 490px);
         }
 
         @include mediaMobile {
-            grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+            grid-template-columns: repeat(1, 350px);
             gap: 20px;
         }
 
-        @media screen and (max-width: 506px) {
-            max-height: 430px;
+        @media screen and (max-width: 778px) {
+            max-height: 480px;
             overflow-y: scroll;
             background: linear-gradient(0deg, #33333378 1%, 
             rgba(255, 255, 255, 0.38) 10%), linear-gradient(180deg, #33333378 1%, 
@@ -157,11 +177,11 @@
                 transition: text-shadow 0.3s ease-in;
 
                 @include mediaTablet {
-                    font-size: 20px;
+                    font-size: 28px;
                 }
 
                 @include mediaMobile {
-                    font-size: 18px;
+                    font-size: 24px;
                 }
             }
 

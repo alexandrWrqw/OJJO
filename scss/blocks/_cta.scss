@@ -45,16 +45,16 @@
     
 .cta__offers {
     margin-right: 80px;
-    
-    @include mediaTablet {
-        font-size: 16px;
-    }
 
     .offers-list{
         display: flex;
         height: 113px;
         flex-direction: column;
         justify-content: space-between;
+
+        @include mediaSTablet {
+            font-size: 20px;
+        }
 
         & a {
             display: flex;

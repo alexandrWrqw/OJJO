@@ -1,13 +1,13 @@
 .articles {
-    padding: 120px 0;
+    margin: 120px 0;
     color: $mainBlack;
 
     @include mediaMobile {
-        padding: 60px 0;
+        margin: 60px 0;
     }
 
     @include mediaSMobile {
-        padding: 40px 0;
+        margin: 40px 0;
     }
 
     &__container {
@@ -31,7 +31,7 @@
 .articles__cards {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 350px);
     gap: 30px;
     margin-bottom: 60px;
 
@@ -40,11 +40,11 @@
     }
 
     @media screen and (max-width: 810px) {
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(1, 350px);
     }
 
     @include mediaSMobile {
-        grid-template-columns: repeat(1, 220px);
+        grid-template-columns: repeat(1, 300px);
         gap: 15px
     }
 
@@ -60,12 +60,8 @@
             height: 370px;
             transition: all 0.3s ease-in;
 
-            @media screen and (max-width: 810px) {
-                height: 320px;
-            }
-
             @include mediaSMobile {
-                height: 260px;
+                height: 320px;
             }
         }
         
@@ -85,7 +81,8 @@
             transition: text-shadow 0.3s ease-in;
 
             @include mediaTablet {
-                font-size: 19px;
+                font-size: 23px;
+                width: 300px;
             }
         }
 
@@ -126,8 +123,7 @@
 }
 
 .articles-button {
-    height: 51px;
-    width: 224px;
+    padding: 15px 35px;
     background-color: $mainBlack;
     border: 1px solid $mainBlack;
     color: $mainWhite;
@@ -137,19 +133,17 @@
     letter-spacing: 2px;
     transition: background 0.2s ease-in, color 0.2s ease-in;
 
-    @include mediaMobile {
-        font-size: 16px;
-        width: 200px;
-    }
-
-    @include mediaSMobile {
-        font-size: 14px;
-        height: 41px;
-        width: 180px;
-    }
-
     &:hover {
         color: $mainBlack;
         background-color: $mainWhite;
+    }
+
+    @include mediaMobile {
+        font-size: 20px;
+        padding: 20px 35px;
+    }
+
+    @include mediaSMobile {
+        font-size: 18px;
     }
 }

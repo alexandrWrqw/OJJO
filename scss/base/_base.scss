@@ -65,6 +65,10 @@ body {
     display: none !important;
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
 .title-2 {
     font-family: $font-accent;
     font-size: 30px;
@@ -73,15 +77,7 @@ body {
     color: inherit;
 
     @include mediaTablet {
-        font-size: 26px;
-    }
-
-    @include mediaMobile {
-        font-size: 24px;
-    }
-
-    @include mediaSMobile {
-        font-size: 22px;
+        font-size: 34px;
     }
 }
 
@@ -92,18 +88,10 @@ body {
     color: inherit;
 
     @include mediaTablet {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     @include mediaMobile {
-        font-size: 16px;
+        font-size: 18px;
     }
-
-    @include mediaSMobile {
-        font-size: 14px;
-    }
-}
-
-.no-scroll {
-    overflow-y: hidden;
 }

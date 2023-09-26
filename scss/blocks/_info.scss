@@ -1,13 +1,13 @@
 .info {
-    padding: 120px 0 150px 0;
+    margin: 120px 0 150px 0;
     color: $mainBlack;
 
     @include mediaMobile {
-        padding: 80px 0 95px 0;
+        margin: 80px 0 95px 0;
     }
 
     @include mediaSMobile {
-        padding: 50px 0 50px 0;
+        margin: 50px 0 50px 0;
     }
 
     &__title {

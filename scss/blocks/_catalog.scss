@@ -1,15 +1,37 @@
 .catalog {
     font-family: $font-main;
 }
+
+.catalog__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 // Select 
 .sorting__menu {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+
+    @include mediaContainer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    @include mediaSTablet {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    @include mediaMobile {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
 
 .sorting__button {
     width: 160px;
-    padding: 5px 0;
+    padding: 5px 3px;
     text-align: left;
     font-size: 16px;
     font-weight: normal;
@@ -43,6 +65,22 @@
     &:focus::after {
         border-color: $greyBorder transparent transparent transparent; 
     }
+
+    @include mediaContainer {
+        font-size: 20px;
+        width: 200px;
+        padding: 7px 3px;
+    }
+
+    @include mediaSTablet {
+        font-size: 22px;
+        width: 220px;
+        padding: 9px 3px;
+    }
+
+    @include mediaMobile {
+        width: 280px;
+    }
 }
 
 .dropdown {
@@ -58,23 +96,51 @@
     background-color: $bg;
     display: none;
 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
     &--visible {
         display: block;
     }
 
     &-item {
         width: 160px;
-        padding: 5px 0;
+        padding: 5px 3px;
         font-size: 16px;
         font-weight: normal;
         line-height: 150%;
         cursor: pointer;
         border-bottom: 1px solid $greyBorder;
+        background-color: $greyBorder;
         transition: border 0.2s ease-in;
 
         &:hover {
             border-bottom: 1px solid $mainBlack;
         }
+
+        @include mediaContainer {
+            font-size: 20px;
+            width: 200px;
+            padding: 7px 3px;
+        }
+
+        @include mediaSTablet {
+            font-size: 22px;
+            width: 220px;
+            padding: 9px 3px;
+        }
+
+        @include mediaMobile {
+            width: 280px;
+        }
+    }
+
+    @include mediaContainer {
+        top: 43px;
+    }
+
+    @include mediaSTablet {
+        top: 50px;
     }
 }
 
@@ -85,11 +151,32 @@
 .catalog__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 95px 0;
+    margin: 95px 0;
     row-gap: 120px;
     column-gap: 30px;
-    height: 1200px;
+    height: 1000px;
     overflow-y: hidden;
+
+    @include mediaContainer {
+        grid-template-columns: 1fr 1fr;
+        margin: 65px 0;
+        row-gap: 80px;
+        column-gap: 20px;
+    }
+
+    @include mediaSTablet {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        height: 1120px;
+    }
+
+    @include mediaMobile {
+        height: 980px;
+    }
+
+    @include mediaSMobile {
+        height: 940px;
+    }
 }
 
 .catalog__cards--active{
@@ -110,6 +197,21 @@
     & img {
         margin-bottom: 25px;
         transition: transform 0.2s ease-in, filter 0.2s ease-in;
+
+        @include mediaSTablet {
+            height: 300px;
+            width: 360px;
+        }
+
+        @include mediaMobile {
+            height: 220px;
+            width: 280px;
+        }
+
+        @include mediaSMobile {
+            height: 180px;
+            width: 240px;
+        }
     }
 
     & .card-subtitle {
@@ -117,6 +219,10 @@
         font-weight: normal;
         line-height: 150%;
         margin-bottom: 10px;
+
+        @include mediaContainer {
+            font-size: 20px;
+        }
     }
 
     & .card-title {
@@ -124,6 +230,11 @@
         font-weight: 600;
         line-height: 140%;
         margin-bottom: 15px;
+        text-align: center;
+
+        @include mediaContainer {
+            font-size: 28px;
+        }
     }
 
     & .card-btn {
@@ -136,6 +247,10 @@
         &:hover {
             background-color: $mainWhite;
             color: $mainBlack;
+        }
+
+        @include mediaContainer {
+            font-size: 24px;
         }
     }
 
@@ -185,6 +300,10 @@
     &:hover {
         color: $mainBlack;
         background-color: $mainWhite;
+    }
+
+    @include mediaContainer {
+        font-size: 24px;
     }
 }
 

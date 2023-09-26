@@ -1,5 +1,17 @@
+@mixin mediaContainer {
+    @media screen and (max-width: $container) {
+        @content;
+    }
+}
+
 @mixin mediaTablet {
     @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mediaSTablet {
+    @media screen and (max-width: $smallTablet) {
         @content;
     }
 }

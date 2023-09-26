@@ -7,14 +7,18 @@
     height: 100%;
     z-index: 10;
     display: flex;
-    padding: 130px 35px 130px 35px;
+    padding: 170px 35px 130px 35px;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     align-items: start;
-    font-size: 21px;
+    font-size: 31px;
     font-weight: normal;
     line-height: 138%;
+
+    @include mediaMobile {
+        font-size: 26px;
+    }
 }
 
 .nav--mobile .nav__list {
@@ -25,7 +29,7 @@
 }
 
 .nav--mobile .list-1 * {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .nav--mobile .list-2 *:not(:last-child) {
@@ -37,11 +41,20 @@
     padding: 33px 0 33px 0;
     border-top: 1px solid $mainWhite;
     border-bottom: 1px solid $mainWhite;
+
+    & > *:not(:last-child) {
+        margin-right: 60px;
+    }
 }
 
 .nav--mobile .list-2 svg{
-    width: 33px;
-    height: 33px;
+    width: 53px;
+    height: 53px;
+
+    @include mediaMobile {
+        width: 33px;
+        height: 33px;
+    }
 }
 
 .nav--mobile .list-2 li:first-child {
@@ -52,6 +65,17 @@
     position: absolute;
     top: 25px;
     left: 25px;
+    pointer-events: none;
+
+    & img {
+        width: 350px;
+        height: 100px;
+
+        @include mediaMobile {
+            width: 216px;
+            height: 52px;
+        }
+    }
 }
 
 .nav--mobile .nav__btn {
@@ -68,11 +92,16 @@
         .social-icons {
             display: flex;
             width: inherit;
-            justify-content: space-around;
+            justify-content: space-between;
 
             a svg {
-                width: 45px;
-                height: 45px;
+                width: 65px;
+                height: 65px;
+
+                @include mediaMobile {
+                    width: 45px;
+                    height: 45px;
+                }
             }
         }
     }

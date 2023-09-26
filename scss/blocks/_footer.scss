@@ -64,7 +64,7 @@
     margin-bottom: 10px;
 
     @include mediaMobile {
-        font-size: 16px;
+        font-size: 22px;
     }
 }
 
@@ -77,9 +77,16 @@
     font-weight: normal;
     line-height: 150%;
 
+    @include mediaTablet {
+        font-size: 18px;
+    }
+
+    @include mediaMobile {
+        font-size: 20px;
+    }
+
     @include mediaSMobile {
         padding: 15px 0;
-        font-size: 12px;
     }
 
     & *:not(:last-child) {
@@ -105,8 +112,12 @@
         font-weight: normal;
         line-height: 150%;
 
+        @include mediaMobile {
+            font-size: 16px;
+        }
+
         @include mediaSMobile {
-            font-size: 12px;
+            font-size: 18px;
 
             &:not(:last-child) {
                 margin-bottom: 15px;

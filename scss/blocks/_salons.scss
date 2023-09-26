@@ -1,12 +1,10 @@
 .salons {
     background: url("./../img/main/salons/salons-bg.jpg");
-    min-height: 541px;
     color: $mainWhite;
     padding: 100px 0;
     text-align: center;
 
     @include mediaMobile {
-        min-height: 441px;
         padding: 60px 0;
     }
 
@@ -34,17 +32,16 @@
         margin-bottom: 60px;
 
         @include mediaTablet {
-            font-size: 16px;
+            font-size: 20px;
         }
         @include mediaMobile {
-            font-size: 14px;
+            font-size: 18px;
             line-height: 150%;
         }
     }
 
     &__button{
-        height: 51px;
-        width: 224px;
+        padding: 15px 35px;
         background-color: $mainWhite;
         border: 1px solid $mainBlack;
         color: $mainBlack;
@@ -54,15 +51,16 @@
         letter-spacing: 2px;
         transition: background 0.2s ease-in, color 0.2s ease-in;
 
+        @include mediaTablet {
+            font-size: 22px;
+        }
+
         @include mediaMobile {
-            font-size: 16px;
-            width: 200px;
+            font-size: 20px;
         }
 
         @include mediaSMobile {
-            font-size: 14px;
-            height: 40px;
-            width: 155px;
+            font-size: 18px;
         }
 
         &:hover {

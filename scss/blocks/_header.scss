@@ -11,11 +11,6 @@
         url('./../img/header/header-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-
-    @include mediaTablet {
-        min-height: 650px;
-        background-size: 1100px 650px;
-    }
 }
 
 .header__title {
@@ -23,7 +18,7 @@
     margin-bottom: -300px;
 
     @include mediaTablet {
-        margin-bottom: 100px;
+        margin-bottom: 350px;
     }
 
     & .main-title {
@@ -31,15 +26,22 @@
         font-size: 36px;
         font-weight: 700;
         line-height: 136%;
+
+        @include mediaTablet {
+            font-size: 40px;
+        }
+
+        @include mediaMobile {
+            font-size: 36px;
+        }
     }
 
     & .catalog-btn {
         background-color: $mainBlack;
-        width: 260px;
-        height: 51px;
+        padding: 15px 35px;
         margin-top: 50px;
         border: 1px solid $mainWhite;
-        line-height: 80%;
+        line-height: 130%;
         letter-spacing: 2px;
         text-transform: uppercase;
         font-weight: 500;
@@ -47,6 +49,16 @@
 
         &:hover {
             background-color: $accent;
+        }
+
+        @include mediaTablet {
+            font-size: 24px;
+            padding: 25px 40px;
+        }
+
+        @include mediaMobile {
+            font-size: 22px;
+            padding: 20px 35px;
         }
     }
 }

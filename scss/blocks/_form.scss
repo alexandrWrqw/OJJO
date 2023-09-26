@@ -1,82 +1,92 @@
 .cta__form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid $mainWhite;
     padding: 15px;
 
     @include mediaMobile {
         padding: 10px;
     }
+}
 
-    .form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $mainWhite;
-        padding: 21px;
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mainWhite;
+    padding: 21px;
 
-        @include mediaMobile {
-            padding: 12px;
-        }
+    @media screen and (max-width: 830px) {
+        flex-direction: column;
+        align-items: end;
 
-        @include mediaSMobile {
-            flex-direction: column;
-            align-items: end;
+        & > *:not(:last-child) {
+            margin-bottom: 20px;
         }
     }
 
-    .form__input {
-        height: 45px;
-        width: 200px;
-        background-color: $mainWhite;
-        padding: 15px;
-        margin-right: 15px;
-        border: 1px solid $greyBorder;
-        font-family: $font-main;
-        letter-spacing: 2px;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 114%;
+    @include mediaMobile {
+        padding: 12px;
+    }
+}
+
+.form__input {
+    height: 45px;
+    width: 200px;
+    background-color: $mainWhite;
+    padding: 15px;
+    margin-right: 15px;
+    border: 1px solid $greyBorder;
+    font-family: $font-main;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 114%;
+    color: $mainBlack;
+
+    &::placeholder {
         color: $mainBlack;
-
-        @include mediaMobile {
-            width: 160px;
-            height: 35px;
-            font-size: 12px;
-        }
-
-        @include mediaSMobile {
-            margin: 0 0 10px 0;
-        }
-
-        &::placeholder {
-            color: $mainBlack;
-            text-transform: uppercase;
-        }
+        text-transform: uppercase;
     }
 
-    .form__btn {
-        width: 159px;
+    @media screen and (max-width: 830px) {
+        width: 300px;
+        margin-right: 0;
+        font-size: 16px;
+        height: 55px;
+    }
+
+    @include mediaMobile {
+        width: 250px;
         height: 45px;
-        background-color: $mainBlack;
-        border: 1px solid $mainBlack;
         font-size: 14px;
-        font-weight: 500;
-        line-height: 114%;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        transition: color 0.2s ease-in, background-color 0.2s ease-in;
+    }
 
-        @include mediaMobile {
-            width: 125px;
-            height: 35px;
-            font-size: 12px;
-        }
+    @include mediaSMobile {
+        margin: 0 0 10px 0;
+    }
+}
 
-        &:hover {
-            background-color: $greyBorder;
-            color: $mainBlack;
-        }
+.form__btn {
+    padding: 15px 35px;
+    background-color: $mainBlack;
+    border: 1px solid $mainBlack;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 114%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: $greyBorder;
+        color: $mainBlack;
+    }
+
+    @media screen and (max-width: 830px) {
+        font-size: 16px;
+    }
+
+    @include mediaMobile {
+        font-size: 14px;
+        padding: 15px 25px;
     }
 }
