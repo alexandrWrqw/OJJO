@@ -49,7 +49,7 @@
         }
 
         @include mediaSMobile {
-            grid-template-columns: repeat(2, 155px);
+            grid-template-columns: repeat(2, 135px);
             font-size: 18px;
             gap: 20px;
         }
@@ -128,6 +128,10 @@
         @include mediaMobile {
             grid-template-columns: repeat(1, 350px);
             gap: 20px;
+        }
+
+        @include mediaSMobile {
+            grid-template-columns: repeat(1, 280px);
         }
 
         @media screen and (max-width: 778px) {

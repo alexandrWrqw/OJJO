@@ -144,6 +144,14 @@
             height: 250px;
         }
 
+        @include mediaMobile {
+            height: 200px;
+        }
+
+        @include mediaSMobile {
+            height: 130px;
+        }
+
         .link-video {
             position: absolute;
             z-index: 4;

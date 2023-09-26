@@ -11,6 +11,16 @@
         url('./../img/header/header-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
+
+    @include mediaMobile {
+        min-height: 750px;
+        background-size: 1200px 750px;
+    }
+
+    @include mediaSMobile {
+        min-height: 650px;
+        background-size: 1000px 650px;
+    }
 }
 
 .header__title {
@@ -19,6 +29,14 @@
 
     @include mediaTablet {
         margin-bottom: 350px;
+    }
+
+    @include mediaMobile {
+        margin-bottom: 150px;
+    }
+
+    @include mediaSMobile {
+        margin-bottom: 100px;
     }
 
     & .main-title {

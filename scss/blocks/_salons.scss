@@ -38,6 +38,11 @@
             font-size: 18px;
             line-height: 150%;
         }
+
+        @include mediaSMobile {
+            font-size: 16px;
+            line-height: 140%;
+        }
     }
 
     &__button{
