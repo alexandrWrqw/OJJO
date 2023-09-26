@@ -154,7 +154,7 @@
     margin: 95px 0;
     row-gap: 120px;
     column-gap: 30px;
-    height: 1000px;
+    height: 1100px;
     overflow-y: hidden;
 
     @include mediaContainer {
@@ -256,6 +256,7 @@
 
     &:hover {
         background-color: #e7e7e7;
+        color: inherit;
 
         &::after {
             content: '';

@@ -6,14 +6,37 @@
     line-height: normal;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 560px) {
+        font-size: 26px;
+    }
 }
 
 .contacts__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    margin: 0 auto;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
     padding-bottom: 60px;
     border-bottom: 1px solid $greyBorder;
     margin: 40px 0 60px 0;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 560px) {
+        grid-template-columns: 1fr;
+
+        & > * {
+            justify-self: center;
+            text-align: center;
+            
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
 }
 
 ._row {
@@ -26,6 +49,10 @@
     & > *:not(:last-child) {
         margin-right: 10px;
     }
+
+    @media screen and (max-width: 560px) {
+        font-size: 20px;
+    }
 }
 
 ._title {
@@ -33,4 +60,8 @@
     line-height: 140%;
     color: $mainBlack;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 560px) {
+        font-size: 20px;
+    }
 }

@@ -190,14 +190,14 @@ body {
 }
 @media screen and (max-width: 540px) {
   .header {
-    min-height: 750px;
-    background-size: 1200px 750px;
+    min-height: 850px;
+    background-size: 1300px 850px;
   }
 }
 @media screen and (max-width: 420px) {
   .header {
-    min-height: 650px;
-    background-size: 1000px 650px;
+    min-height: 750px;
+    background-size: 1100px 750px;
   }
 }
 
@@ -1000,13 +1000,14 @@ body {
   font-weight: normal;
   line-height: 123%;
   text-align: center;
-  width: 206px;
-  transition: text-shadow 0.3s ease-in;
+  width: 240px;
+  border-radius: 25px;
+  transition: text-shadow 0.3s ease-in, background-color 0.3s ease-in;
 }
 @media screen and (max-width: 999px) {
   .articles__cards .articles-card-title {
     font-size: 23px;
-    width: 300px;
+    width: 250px;
   }
 }
 .articles__cards .articles-card::before {
@@ -1026,6 +1027,7 @@ body {
   cursor: pointer;
 }
 .articles__cards .articles-card:hover .articles-card-title {
+  background-color: rgba(51, 51, 51, 0.8078431373);
   text-shadow: 2px 2px 2px black;
   cursor: pointer;
 }
@@ -1709,7 +1711,7 @@ body {
   row-gap: 120px;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  height: 1000px;
+  height: 1100px;
   overflow-y: hidden;
 }
 @media screen and (max-width: 1140px) {
@@ -1817,6 +1819,7 @@ body {
 }
 .catalog__card:hover {
   background-color: #e7e7e7;
+  color: inherit;
 }
 .catalog__card:hover::after {
   content: "";
@@ -2140,13 +2143,37 @@ body {
   letter-spacing: 2.4px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 560px) {
+  .contacts__title {
+    font-size: 26px;
+  }
+}
 
 .contacts__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  margin: 0 auto;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
   padding-bottom: 60px;
   border-bottom: 1px solid #D6D6D6;
   margin: 40px 0 60px 0;
+}
+@media screen and (max-width: 999px) {
+  .contacts__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 560px) {
+  .contacts__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contacts__wrapper > * {
+    justify-self: center;
+    text-align: center;
+  }
+  .contacts__wrapper > *:not(:last-child) {
+    margin-bottom: 35px;
+  }
 }
 
 ._row {
@@ -2158,10 +2185,20 @@ body {
 ._row > *:not(:last-child) {
   margin-right: 10px;
 }
+@media screen and (max-width: 560px) {
+  ._row {
+    font-size: 20px;
+  }
+}
 
 ._title {
   font-weight: 600;
   line-height: 140%;
   color: #333333;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 560px) {
+  ._title {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

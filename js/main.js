@@ -55,10 +55,9 @@ document.querySelectorAll('.catalog__container').forEach(function (catalogWrappe
         this.textContent = this.textContent === 'Покажите еще' ? 'Скрыть' : 'Покажите еще';
 
         if (this.textContent !== 'Скрыть') {
-            window.scrollTo({
-                top: 1000,
-                left: 0,
-                behavior: 'smooth'
+            this.scrollIntoView({ 
+                block: "center", 
+                behavior: "smooth"
             });
         };
     });
@@ -73,5 +72,3 @@ document.querySelectorAll('.feature__container').forEach(function (featureWrappe
         this.textContent = this.textContent === 'Читать полностью' ? 'Скрыть' : 'Читать полностью';
     });
 });
-
-
