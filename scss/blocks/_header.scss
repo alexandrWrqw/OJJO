@@ -13,13 +13,13 @@
     background-repeat: no-repeat;
 
     @include mediaMobile {
-        min-height: 750px;
-        background-size: 1200px 750px;
+        min-height: 850px;
+        background-size: 1300px 850px;
     }
 
     @include mediaSMobile {
-        min-height: 650px;
-        background-size: 1000px 650px;
+        min-height: 750px;
+        background-size: 1100px 750px;
     }
 }
 
