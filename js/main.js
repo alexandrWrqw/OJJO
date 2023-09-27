@@ -72,3 +72,38 @@ document.querySelectorAll('.feature__container').forEach(function (featureWrappe
         this.textContent = this.textContent === 'Читать полностью' ? 'Скрыть' : 'Читать полностью';
     });
 });
+// Swiper product block
+new Swiper ('.swiper-container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+});
+
+const body = document.querySelector('body')
+const content = document.querySelector('.swiper');
+const closeBtn = document.querySelector('.close-btn');
+
+closeBtn.addEventListener('click', function () {
+    content.classList.add('none');
+    body.classList.remove('no-scroll')
+});
+
+// const openBtn = document.querySelector('.image-btn');
+// openBtn.addEventListener('click', function () {
+//     content.classList.remove('none');
+//     body.classList.add('no-scroll');
+// });
+
+// document.querySelectorAll('.image-btn').forEach(function(open) {
+
+//     closeBtn.addEventListener('click', function () {
+//         content.classList.add('none');
+//         body.classList.remove('no-scroll')
+//     });
+
+//     .addEventListener('click', function () {
+//         content.classList.remove('none');
+//         body.classList.add('no-scroll');
+//     });
+// })

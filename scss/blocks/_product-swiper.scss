@@ -1,0 +1,70 @@
+.swiper {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: rgba(128, 128, 128, 0.93);
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product__swiper {
+    position: absolute;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 650px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.product__image {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.product__image img {
+    height: 490px;
+    width: 600px;
+}
+
+.product__image-prev::after,
+.product__image-next::after {
+    color: $mainWhite;
+}
+
+// ------------------------
+
+.close-btn::after,
+.close-btn::before {
+    content: '';
+	display: block;
+
+	position: absolute;
+    z-index: 3;
+	right: 0;
+    top: 40px;
+
+	width: 33px;
+	height: 4px;
+    border-radius: 10px;
+
+	background-color: $mainWhite;
+	transition: transform 0.2s ease-in,
+		top 0.2s linear 0.2s;
+    cursor: pointer;
+}
+
+.close-btn {
+	background-color: transparent;
+}
+
+.close-btn::before {
+	transform: rotate(45deg);
+}
+
+.close-btn::after {
+	transform: rotate(-45deg);
+}

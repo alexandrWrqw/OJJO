@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OJJO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -90,19 +91,42 @@
                     <span>/</span>
                     <a href="./catalog.html">Каталог</a>
                     <span>/</span>
-                    <h3>Подвеска Dolce & Gabara</h3>
+                    <h3>Подвеска&nbspDolce&nbsp&&nbspGabara</h3>
                 </div>
                 <div class="product__wrapper">
                     <div class="product__images">
-                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
-                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
-                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
-                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
+                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска" class="image-btn">
+                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска" class="image-btn">
+                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска" class="image-btn">
+                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска" class="image-btn">
+                    </div>
+                    <div class="swiper none">
+                        <div class="product__swiper">
+                            <div class="product__container swiper-container">
+                                <div class="product__images-content swiper-wrapper">
+                                    <div class="product__image swiper-slide">
+                                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
+                                    </div>
+                                    <div class="product__image swiper-slide">
+                                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
+                                    </div>
+                                    <div class="product__image swiper-slide">
+                                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
+                                    </div>
+                                    <div class="product__image swiper-slide">
+                                        <img src="./img/main/product-card/catalog-item.jpg" alt="Подвеска">
+                                    </div>
+                                </div>
+                                <div class="close-btn"></div>
+                                <div class="product__image-prev swiper-button-prev"></div>
+                                <div class="product__image-next swiper-button-next"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="product__info">
                         <div class="product__info-wrapper">
-                            <h2 class="product-title">Подвеска Dolce & Gabbara</h2>
-                            <h3 class="product-subtitle">Категория:<span>Подвески</span>Бренд:<span>Dolce & Gabbara</span></h3>
+                            <h2 class="product-title">Подвеска Dolce&nbsp&<wbr>&nbspGabbara</h2>
+                            <h3 class="product-subtitle">Категория:<span>Подвески</span><wbr>Бренд:<span>Dolce&nbsp&&nbspGabbara</span></h3>
                             <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mattis
                                 scelerisque odio nunc. Ipsum quis facilisis turpis vulputate. Viverra
                                 dignissim in nec phasellus. Tincidunt est ipsum diam, vestibulum
@@ -164,7 +188,7 @@
                 </div>
             </div>
         </section>
-        <section class="product-offers">
+        <section class="product-offers none">
             <div class="container">
                 <div class="offers-title">
                     <h3 class="subtitle">Мы подготовили для вас кое-что еще</h3>
@@ -330,6 +354,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
