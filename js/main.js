@@ -70,6 +70,13 @@ document.querySelectorAll('.feature__container').forEach(function (featureWrappe
     readBtn.addEventListener('click', function() {
         featureInfo.classList.toggle('feature__info--active');
         this.textContent = this.textContent === 'Читать полностью' ? 'Скрыть' : 'Читать полностью';
+
+        if (this.textContent !== 'Скрыть') {
+            this.scrollIntoView({ 
+                block: "nearest", 
+                behavior: "smooth"
+            });
+        };
     });
 });
 // Swiper product block
