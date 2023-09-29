@@ -67,7 +67,7 @@ document.querySelectorAll('.feature__container').forEach(function (featureWrappe
     const readBtn = featureWrapper.querySelector('.read-btn');
     const featureInfo = featureWrapper.querySelector('.feature__info');
 
-    readBtn.addEventListener('click', function() {
+    readBtn.addEventListener('click', function () {
         featureInfo.classList.toggle('feature__info--active');
         this.textContent = this.textContent === 'Читать полностью' ? 'Скрыть' : 'Читать полностью';
 
@@ -79,43 +79,18 @@ document.querySelectorAll('.feature__container').forEach(function (featureWrappe
         };
     });
 });
-// Swiper product block
-let slider = new Swiper ('.swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+// form block 
+const sent = document.querySelector('.form__sent');
+const sentBtn = document.querySelector('.form__btn');
+let input = document.querySelector('.form__input');
+const textValueNone = document.querySelector('.form__value-none');
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-    },
-    
-    zoom: {
-        maxRatio: 5,
-        minRatio: 1,
-    },
-});
-// Click image => open swiper
-const body = document.querySelector('body')
-const content = document.querySelector('.product__swiper');
-const openBtns = document.querySelectorAll('.image-btn')
-const closeBtn = document.querySelector('.close-btn');
-
-openBtns.forEach(function (imageBtn) {
-    imageBtn.addEventListener('click', () => {
-        slider.slideTo(0, 800);
-        content.classList.remove('none');
-        body.classList.add('no-scroll');
-    })
-})
-
-closeBtn.addEventListener('click', function () {
-    content.classList.add('none');
-    body.classList.remove('no-scroll');
+sentBtn.addEventListener('click', function () {
+    if (input.value !== '') {
+        sent.classList.add('sent');
+        textValueNone.classList.remove('value-none-visible');
+    } else {
+        textValueNone.classList.add('value-none-visible');
+        input.focus();
+    };
 });
